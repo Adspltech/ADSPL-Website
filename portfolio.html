@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="home.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    @font-face {
+      font-family: comf;
+      src: url(assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+    }
+
+    body {
+      /* background-color: black; */
+      font-family: comf;
+      /* background-color: blue; */
+    }
+
+    nav {
+      font-weight: 700;
+      font-size: large;
+    }
+
+    .prodcard img{
+      /* height: 50px; */
+      width: fit-content;
+    }
+
+    /* .icontain{
+      height: 150px;
+    } */
+
+
+
+    .myfont1 {
+      font-weight: 800;
+    }
+
+
+    #maintagline {
+      /* height: 90vh; */
+      height: 100%;
+    }
+
+    #maintagline h1 {
+      font-weight: 1000;
+      /* font-size: xx-large; */
+      /* font-size: 11vh; */
+      font-size: 440%;
+    }
+
+    #maintagline button {
+      background-color: white;
+      color: black;
+      border-radius: 60px;
+      font-weight: 1000;
+      font-size: x-large;
+      /* height: 70px; */
+    }
+
+    #frame2 {
+      height: 90%;
+    }
+
+
+    #frame-t2 {
+      background-color: lightskyblue;
+      /* color: black; */
+    }
+
+
+
+    #frame-t2 h1 {
+      font-weight: 1000;
+      /* font-size: xx-large; */
+      /* font-size: 11vh; */
+      font-size: 440%;
+    }
+
+    #frame-t2 button {
+      background-color: white;
+      color: lightskyblue;
+      border-radius: 60px;
+      font-weight: 1000;
+      font-size: x-large;
+      /* height: 70px; */
+    }
+
+    /* #mainheading{
+      background-image: url(assets/images/gif/3d08e03cb40252526fee2036a67f07f1.gif);
+      color: white;
+      background-color: black;
+    } */
+
+    #first {
+      /* background-image: url(assets/images/gif/8c89bb567f6ea95d4618febc0774b658.gif); */
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <title>ADSPL is the Top IoT and AI development agency in India</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light p-3 pt-4 " id="darkmenu">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-2" href="index.html">
+        <img src="assets/images/adspl.png" alt="" height="35">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav   ms-auto mb-2 mb-lg-0 px-5">
+          <li class="nav-item">
+            <a class="nav-link active mainitem" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle mainitem" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="aboutmenu">
+              <div class="row p-5 pt-3  shadow-lg">
+                <div class="col-md-6">
+                  <div class="d-flex flex-column  " style="width: 90%;">
+
+                    <ul class="flex-column mb-auto list-unstyled ">
+                      <li><a class="nav-link link-dark" href="company.html">Company</a></li>
+                      <li><a class="nav-link link-dark" href="#">How We Work</a></li>
+                      <!-- <li><a class="nav-link link-dark" href="#">Testimonials</a></li> -->
+                    </ul>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mainitem" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mainitem" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              What We Do
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="what-we-do-menu">
+              <div class="row p-5 pt-3  shadow-lg">
+                <div class="col-md-6">
+                  <div class="d-flex flex-column  " style="width: 90%;">
+                    <div class="d-flex">
+                      <strong><span class="fs-5 justify-content-center ">Solutions</span></strong>
+                    </div>
+                    <hr>
+                    <ul class="flex-column mb-auto list-unstyled ">
+                      <li><a class="nav-link link-dark" href="#">IoT Solutions</a></li>
+                      <li><a class="nav-link link-dark" href="#">Data Analytics & Management Solutions</a></li>
+                      <li><a class="nav-link link-dark" href="#">AR/VR Solutions</a></li>
+                    </ul>
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="d-flex flex-column  " style="width: 90%;">
+                    <div class="d-flex">
+                      <strong><span class="fs-5 justify-content-center ">Services</span></strong>
+                    </div>
+                    <hr>
+                    <ul class="flex-column mb-auto list-unstyled ">
+                      <li><a class="nav-link link-dark" href="#">IoT Software Development</a></li>
+                      <li><a class="nav-link link-dark" href="#">Software Product Development</a></li>
+                      <li><a class="nav-link link-dark" href="#">Custom Software Development</a></li>
+                      <li><a class="nav-link link-dark" href="#">Technology Consulting Prototyping</a></li>
+                      <li><a class="nav-link link-dark" href="#">Dedicated Development Teams</a></li>
+                      <li><a class="nav-link link-dark" href="#">Software Re-engineering</a></li>
+                      <li><a class="nav-link link-dark" href="#">Customization And Enhancement</a></li>
+                      <li><a class="nav-link link-dark" href="#">Web Application Development</a></li>
+                      <li><a class="nav-link link-dark" href="#">Mobile App Development</a></li>
+                      <li><a class="nav-link link-dark" href="#">Services For Start Up</a></li>
+                    </ul>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mainitem" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="productmenu">
+              <div class="row p-5  shadow-lg">
+                <div class="d-flex align-items-start" id="prodmenutabs">
+                  <div class="nav flex-column nav-pills me-3 col-md-4 prodpills" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-smartdevices-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-smartdevices" type="button" role="tab"
+                      aria-controls="v-pills-smartdevices" aria-selected="true">Smart Device - IOT</button>
+                    <button class="nav-link" id="v-pills-inventory-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-inventory" type="button" role="tab" aria-controls="v-pills-inventory"
+                      aria-selected="false">Inventory & Sales Prediction</button>
+                    <button class="nav-link" id="v-pills-face-tab" data-bs-toggle="pill" data-bs-target="#v-pills-face"
+                      type="button" role="tab" aria-controls="v-pills-face" aria-selected="false">Face
+                      Recognition</button>
+                    <button class="nav-link" id="v-pills-meeting-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-meeting" type="button" role="tab" aria-controls="v-pills-meeting"
+                      aria-selected="false">Meeting Action Software</button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                      aria-selected="false">AI Chatbot</button>
+                  </div>
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active " id="v-pills-smartdevices" role="tabpanel"
+                      aria-labelledby="v-pills-smartdevices-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Smart Device - IOT</span></strong>
+                      </div>
+                      ADSPL is bringing a series of “Intelli+Save” products for your Smart Home which will be truly a
+                      steppingstone for anyone who wants to enjoy the experience of life in the future.
+                      <br><a href="Product - Smart Devices.html">Learn more...</a>
+                    </div>
+                    <div class="tab-pane fade " id="v-pills-inventory" role="tabpanel"
+                      aria-labelledby="v-pills-inventory-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Inventory & Sales Prediction</span></strong>
+                      </div>
+                      Our Inventory and Sales Prediction Software “MaxSales” will help businesses predict the sales and
+                      management of their products beforehand.
+                      <br><a href="Product - Inventory.html">Learn more...</a>
+                    </div>
+
+                    <div class="tab-pane fade " id="v-pills-face" role="tabpanel" aria-labelledby="v-pills-face-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Face Recognition</span></strong>
+                      </div>
+                      A facial recognition attendance system is a contactless way to manage visitors and employees in an
+                      organization.
+                      <br><a href="Product - Face Recognition.html">Learn more...</a>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="v-pills-meeting" role="tabpanel"
+                      aria-labelledby="v-pills-meeting-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Meeting Action Software</span></strong>
+                      </div>
+                      Our application will generate minutes of meetings for you. You will get all the action items along
+                      with name and date, scheduled events, all of the attendees information.
+                      <br><a href="Product - Meeting.html">Learn more...</a>
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">AI Chatbot</span></strong>
+                      </div>
+                      Conversational AI allows artificial intelligence (AI) technologies like chatbots to interact with
+                      people in a humanlike way. With conversational AI you can go beyond just translating website
+                      content into simple chatbot responses.
+                      <br><a href="Product - Chatbot.html">Learn more...</a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mainitem" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mainitem" href="contacts.html">Contact Us</a>
+          </li>
+
+        </ul>
+        <!-- <a role="button" class="btn btn-primary">Get in Touch</a> -->
+
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <div>
+      <!-- <div class="row text-center">
+        <h1 class="display-5">Product</h1>
+      </div> -->
+
+
+      <div class="p-3 bg-light shadow-sm " id="mainheading">
+        <div class="container  text-center">
+          <h1 class="d fw-bold">Portfolio</h1>
+          </div>
+      </div>
+
+
+
+      <div id="mainDivBelowHeading">
+
+
+
+
+
+
+
+
+
+
+<div>
+  <div class="container">
+    <div class="row">
+      
+<h1 class="text-center p-4">Featured Projects</h1>
+
+      
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5 icontain">
+            <img src="assets/images/MoM1.png" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">INVENTORY AND SALES PREDICTION
+                MODEL</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info1" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-tech-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech1" type="button" role="tab" aria-controls="nav-tech"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                   </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info1" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>Machine learning utilizes additional internal and external sources of information to make more accurate, data-driven predictions. ML engines can work with both structured and unstructured data including past financial and sales reports , marketing polls, macroeconomic indicators, social media signals weather forecasts, and more.</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech1" role="tabpanel"
+                  aria-labelledby="nav-tech-tab">
+
+                  <ul class="">
+                    <li>Linear Regression </li>
+                    <li>Time series forecasting</li>
+                    <li>Sarimax</li>
+                    <li>Random Forest regressor</li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/GEO-attendance-solution.jpg" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">FACE RECOGNITION & ATTENDANCE MODEL</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info2" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech2" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                  <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info2" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>OpenCV uses machine learning algorithms to
+                    search for faces within a picture. Face detection
+                    using Haar cascades is a machine learning based
+                    approach where a cascade function is trained with
+                    a set of input data.</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech2" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                   <li>Dlib’s</li>
+                   <li>Haar cascade</li>
+                   <li> Deep learning</li>
+                  <li>OpenCV</li> 
+                    
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+
+ 
+      
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/remote-patient-monitoring-1.png" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">Remote Patient Monitoring device</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info3" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech3" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                  <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info3" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>The Project is to present a battery powered wireless wearable device capable of monitoring heart rate ,ecg, spo2(pulse oximeter),continuous body temperature and glucose monitoring and raises an alert to the concerned authority in case of abnormality or emergency.</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech3" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                    <li>Python</li>
+                     <li>Android studio</li> 
+                     <li>ESP 8266</li>
+                    <li>Deep Learning model</li> 
+                    
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/artificial-intelligence-chatbots.png" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">Dynamic Chatbot to improve Website with AI</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info4" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech4" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                  <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info4" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>It’s an automatic assistance chatbot that can streamline the customer journey, first visit, enquiring the content, self service or complaint. Based on the gathered information it can fill automatically fill out a form, It automates processes and provide guidance, it can act as a tool for automating sales.</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech4" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                    <li>Python</li>
+                      <li>NLP</li>
+                      <li>Wit.ai</li>
+                    
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+
+            
+      
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/Agri-iot.jpg" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">Agri IOT Product</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info5" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech5" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                  <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info5" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>This project is designed to create a smart IOT device that can assist the farmers in farming in various stages of the crop. A Mobile application to help the plant and disease detection with the help of deep learning model, the app date will let the farmer analyze the crop motives and take actions likewise so that it can maximize the yield through which the farmer can be benefitted.</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech5" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                    <li>Python </li>
+                    <li>Flutter</li>
+                    <li>Android studio</li>
+                    <li>Embedded C</li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+
+
+            
+      
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/smart-thermostat-controls-768x385.jpg" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">The Smart Home Power Saving Device</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info6" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech6" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                  <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info6" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>The smart home power saving device is the need of the hour as today there is an unavoidable demand of a single product which have the following features: Monitor Current, Voltage and Power Consumption of various appliances used in residential, commercial ...</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech6" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                    <li>Java </li>
+                    <li>Linux </li>
+                    <li>BLE</li>
+                    <li>PCB</li>
+                    <li>AI</li>
+                    <li>ESP8266</li>
+                    <li>Node Js</li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+
+<hr>
+
+      <h1>Completed Projects</h1>
+            
+      
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/Heart-attack-prediction.jpeg" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">Heart Attack Prediction with AI Model</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info7" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech7" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                  <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info7" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>The Project is to Create a Machine Learning model that can analyze a patient’s clinical test reports and predict his future heart condition.</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech7" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                    <li>Logistic Regression</li>
+                    <li>K-Nearest Neighbours Classifier</li>
+                    <li>Random Forest Classifier</li>
+                    
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+
+<!-- 
+            
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/MoM1.png" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">Cloud</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info1" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech1" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                 </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info1" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>facial</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech1" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                    
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+            
+      <div class="col-md-6">
+        <div class="card m-3 shadow-lg prodcard">
+          <div class="container px-5">
+            <img src="assets/images/MoM1.png" class="img-fluid" alt="Example image" width="" height="400" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="text-center p-2">
+              <h5 class="card-title fw-bold">Cloud</h5>
+            </div>
+
+            <div class="cardtabs">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-info-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-info1" type="button" role="tab" aria-controls="nav-info"
+                    aria-selected="true" style="font-size: smaller;">Info</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-tech1" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false" style="font-size: smaller;">Technologies</button>
+                   </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade pt-2 show active" id="nav-info1" role="tabpanel"
+                  aria-labelledby="nav-info-tab">
+                  <p>facial</p>
+
+                </div>
+                <div class="tab-pane fade pt-2" id="nav-tech1" role="tabpanel"
+                  aria-labelledby="nav-profile-tab">
+
+                  <ul class="">
+                    
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="#" class="">Know more...</a>
+          </div>
+        </div>
+      </div>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+  </main>
+
+
+
+
+  <footer class="pt-4 my-md-5 pt-md-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="assets/images/adspl.png" alt="" width="90">
+        <small class="d-block mb-3 text-muted">&copy; 2019–2021</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Useful links</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Home</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">About</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">How We Work</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Portfolio</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Services</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Solutions</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Contact info</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

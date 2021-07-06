@@ -1,0 +1,85 @@
+.mainitem {
+  /* font-size: large; */
+  /* font-weight: 700; */
+  margin-left: 10px;
+
+  font-weight: 900;
+  font-size: large;
+}
+
+#productmenu a{
+  color: blue;
+}
+
+#productmenu {
+  background-color: black;
+  color: white;
+}
+#what-we-do-menu {
+  background-color: black;
+  /* background-color: orange; */
+}
+#aboutmenu {
+  background-color: black;
+}
+
+
+.dd-custom{
+  background-color: black;
+  /* color: aliceblue; */
+}
+
+#prodmenutabs button.active {
+  background-color: beige;
+  color: black;
+
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  /* left:0px; */
+  margin-top: 0px !important;
+  width: 60% !important;
+  /* left: 10%; */
+  right: 5%;
+  top: 85px;
+  background-color: transparent;
+  border: none;
+
+  /* animation: fadeInLeft; */
+  animation: fadeInDown;
+  animation-duration: .6s;
+
+}
+
+.dropdown {
+  position: static !important;
+}
+
+
+.mainitem:hover {
+  /* display: inline-block; */
+  /* margin: 0 0.5rem; */
+  /* background-color: burlywood; */
+  /* fill: white */
+
+  animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+}
+
+.offeringcard:hover .card {
+  border-color: blue;
+  border-width: medium;
+  transition-duration: 700ms;
+}
+
+.offeringcard:hover .card-header {
+  background-color: skyblue;
+  color: white;
+  transition-duration: 700ms;
+
+}
+
+
