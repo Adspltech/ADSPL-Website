@@ -1,3 +1,20 @@
+
+@font-face {
+  font-family: comf;
+  src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: black;
+  font-family: comf;
+}
+
+
+
+
+
+
+
 .mainitem {
   /* font-size: large; */
   /* font-weight: 700; */
@@ -17,7 +34,6 @@
 }
 #what-we-do-menu {
   background-color: black;
-  /* background-color: orange; */
 }
 #aboutmenu {
   background-color: black;
@@ -35,23 +51,24 @@
 
 }
 
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  /* left:0px; */
-  margin-top: 0px !important;
-  width: 60% !important;
-  /* left: 10%; */
-  right: 5%;
-  top: 85px;
-  background-color: transparent;
-  border: none;
-
-  /* animation: fadeInLeft; */
-  animation: fadeInDown;
-  animation-duration: .6s;
-
+@media (min-width: 1000px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    /* left:0px; */
+    margin-top: 0px !important;
+    width: 60% !important;
+    /* left: 10%; */
+    right: 5%;
+    top: 85px;
+    background-color: transparent;
+    border: none;
+  
+    /* animation: fadeInLeft; */
+    animation: fadeInDown;
+    animation-duration: .6s;
+  }
 }
+
 
 .dropdown {
   position: static !important;
@@ -82,4 +99,180 @@
 
 }
 
+
+
+
+
+/* Starts integration */
+
+
+/* homepage style start */
+
+
+#maintagline {
+  height: 600px;
+}
+
+#maintagline h1 {
+  font-weight: 1000;
+  font-size: 440%;
+}
+
+#maintagline button {
+  background-color: white;
+  color: black;
+  border-radius: 60px;
+  font-weight: 1000;
+  font-size: x-large;
+}
+
+#maintagline button :hover {
+  background-color: orange;
+
+}
+
+.bigcircularbutton1 {
+  background-color: white;
+  color: black;
+  border-radius: 60px;
+  font-weight: 1000;
+  font-size: x-large;
+}
+
+#frame2 {
+  height: 90%;
+}
+
+
+#who-we-are {
+  height: 700px;
+}
+
+#trusted-by {
+  background-color: rgb(40, 44, 47);
+
+}
+
+#technical-partners {
+  background-color: rgb(54, 113, 223);
+}
+
+#Testimonials {
+  background-color: rgb(54, 113, 223);
+  padding: 50px;
+}
+
+.testimo-card{
+  height: 300px;
+}
+
+
+.circular-button {
+  border-radius: 60px;
+  font-weight: 1000;
+  font-size: x-large;
+
+}
+
+#frame-t2 button {
+  background-color: white;
+  color: lightskyblue;
+  border-radius: 60px;
+  font-weight: 1000;
+  font-size: x-large;
+  /* height: 70px; */
+}
+
+#frame-topcompany {
+  background-image: url(../images/bg11.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white;
+  height: 600px;
+  width: 100%;
+}
+
+#darkmenu {
+  color: white;
+  background-color: black;
+}
+
+
+/* homepage style start */
+
+
+
+
+@media (max-width: 767px){
+
+
+
+  
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px !important;
+  width: 100% !important;
+  /* left: 10%; */
+  /* right: 5%; */
+  /* top: 85px; */
+  background-color: transparent;
+  border: none;
+
+  /* animation: fadeInLeft; */
+  /* animation: fadeInDown;
+  animation-duration: .6s; */
+
+}
+  
+#maintagline {
+  height: 500px;
+}
+
+#maintagline h1 {
+  font-weight: 1000;
+  font-size: 300%;
+}
+
+#maintagline button {
+  background-color: white;
+  color: black;
+  border-radius: 60px;
+  font-weight: 1000;
+  font-size: large;
+ padding: 2px;
+}
+
+#maintagline button :hover {
+  background-color: orange;
+
+}
+
+.bigcircularbutton1 {
+  background-color: white;
+  color: black;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: large;
+}
+
+#who-we-are {
+  height: 900px;
+}
+
+#frame-topcompany {
+  height: 800px;
+  width: 100%;
+}
+
+.testimo-card{
+  height: 750px;
+}
+
+#Testimonials {
+  padding: 5px;
+}
+
+
+
+}
 
