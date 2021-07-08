@@ -22,7 +22,13 @@
     <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+
+
+
+    
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
 <!--
 
 TemplateMo 563 SEO Dream
@@ -30,6 +36,77 @@ TemplateMo 563 SEO Dream
 https://templatemo.com/tm-563-seo-dream
 
 -->
+
+
+ 
+<style>
+
+  .mainitem{
+    font-weight: 600;
+    
+  }
+      
+  #maintagline {
+    height: 500px;
+    width: 100%;
+  }
+  
+  #carouselMainProducts{
+    height: 500px;
+    width: 100%;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    /* left:0px; */
+    margin-top: 0px !important;
+    width: 60% !important;
+    left: 10%;
+    top: 80px;
+    background-color: transparent;
+    
+    border: none;
+  /* 
+    animation: fadeInLeft;
+    animation-duration: .6s; */
+  
+  }
+  
+  .dropdown {
+    position: static !important;
+  }
+  
+  
+  
+  #productmenu {
+    background-color: white;
+    color: black;
+  }
+  #productmenu button{
+    
+    color: black;
+  }
+  
+  
+  #productmenu a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    background: transparent;
+  }
+  
+  
+  
+  #aboutmenu {
+    background-color: white;
+  }
+  #aboutmenu a{
+    color: black;
+  }
+  
+  
+  
+  
+  
+    </style>
+  
 
 </head>
 
@@ -48,196 +125,331 @@ https://templatemo.com/tm-563-seo-dream
   </div>
   <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <h4>ADSPL <img src="assets/images/logo-icon.png" alt=""></h4>
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav ">
-              <li class="scroll-to-section "><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#features">Features</a></li>
-              <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
-              <li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li> 
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
+  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <!-- <h1><a href="index.html">ADSPL</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/images/adspl.png" alt="" class="img-fluid" style="width: auto;"></a>
       </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-4 " id="darkmenu">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand ps-2" href="index.html">
+            <img src="assets/images/adspl.png" alt="" height="75">
+          </a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav   ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active mainitem" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle mainitem" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="aboutmenu">
+                  <div class="row p-5 pt-3  shadow-lg">
+                    <div class="col-md-6">
+                      <div class="d-flex flex-column  " style="width: 90%;">
+                        
+                        <ul class="flex-column mb-auto list-unstyled ">
+                          <li><a class="nav-link link-dark" href="company.html">Company</a></li>
+                          <li><a class="nav-link link-dark" href="#">How We Work</a></li>
+                          <!-- <li><a class="nav-link link-dark" href="#">Testimonials</a></li> -->
+                        </ul>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mainitem" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mainitem" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  What We Do
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="what-we-do-menu">
+                  <div class="row p-5 pt-3  shadow-lg">
+                    <div class="col-md-6">
+                      <div class="d-flex flex-column  " style="width: 90%;">
+                        <div class="d-flex">
+                          <strong><span class="fs-5 justify-content-center ">Solutions</span></strong>
+                        </div>
+                        <hr>
+                        <ul class="flex-column mb-auto list-unstyled ">
+                          <li><a class="nav-link link-dark" href="#">IoT Solutions</a></li>
+                          <li><a class="nav-link link-dark" href="#">Data Analytics & Management Solutions</a></li>
+                          <li><a class="nav-link link-dark" href="#">AR/VR Solutions</a></li>
+                        </ul>
+                        <hr>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                      <div class="d-flex flex-column  " style="width: 90%;">
+                        <div class="d-flex">
+                          <strong><span class="fs-5 justify-content-center ">Services</span></strong>
+                        </div>
+                        <hr>
+                        <ul class="flex-column mb-auto list-unstyled ">
+                          <li><a class="nav-link link-dark" href="Services - IoT Software Development.html">IoT Software Development</a></li>
+                          <li><a class="nav-link link-dark" href="Services -  Software Product Development.html">Software Product Development</a></li>
+                          <li><a class="nav-link link-dark" href="Services - Custom Software Development copy.html">Custom Software Development</a></li>
+                          <li><a class="nav-link link-dark" href="#">Technology Consulting Prototyping</a></li>
+                          <li><a class="nav-link link-dark" href="#">Dedicated Development Teams</a></li>
+                          <li><a class="nav-link link-dark" href="#">Software Re-engineering</a></li>
+                          <li><a class="nav-link link-dark" href="#">Customization And Enhancement</a></li>
+                          <li><a class="nav-link link-dark" href="#">Web Application Development</a></li>
+                          <li><a class="nav-link link-dark" href="#">Mobile App Development</a></li>
+                          <li><a class="nav-link link-dark" href="#">Services For Start Up</a></li>
+                        </ul>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mainitem" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="productmenu">
+                  <div class="row shadow-lg">
+                    <div class="d-flex align-items-start" id="prodmenutabs">
+                      <div class="nav flex-column nav-pills me-3 col-md-4 prodpills" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-smartdevices-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-smartdevices" type="button" role="tab" aria-controls="v-pills-smartdevices"
+                          aria-selected="true">Smart Device - IOT</button>
+                        <button class="nav-link" id="v-pills-inventory-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-inventory" type="button" role="tab" aria-controls="v-pills-inventory"
+                          aria-selected="false">Inventory & Sales Prediction</button>
+                        <button class="nav-link" id="v-pills-face-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-face" type="button" role="tab" aria-controls="v-pills-face"
+                          aria-selected="false">Face Recognition</button>
+                        <button class="nav-link" id="v-pills-meeting-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-meeting" type="button" role="tab" aria-controls="v-pills-meeting"
+                          aria-selected="false">Meeting Action Software</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                          data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                          aria-selected="false">AI Chatbot</button>
+                      </div>
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active " id="v-pills-smartdevices" role="tabpanel"
+                          aria-labelledby="v-pills-smartdevices-tab">
+                          <div class="d-flex">
+                            <strong><span class="fs-5 justify-content-center ">Smart Device - IOT</span></strong>
+                          </div>
+                          ADSPL is bringing a series of “Intelli+Save” products for your Smart Home which will be truly a
+                          steppingstone for anyone who wants to enjoy the experience of life in the future.
+                          <br><a href="Product - Smart Devices.html">Learn more...</a>
+                        </div>
+                        <div class="tab-pane fade " id="v-pills-inventory" role="tabpanel"
+                          aria-labelledby="v-pills-inventory-tab">
+                          <div class="d-flex">
+                            <strong><span class="fs-5 justify-content-center ">Inventory & Sales Prediction</span></strong>
+                          </div>
+                          Our Inventory and Sales Prediction Software “MaxSales” will help businesses predict the sales and management of their products beforehand.
+                          <br><a href="Product - Inventory.html">Learn more...</a>
+                        </div>
+    
+                        <div class="tab-pane fade " id="v-pills-face" role="tabpanel"
+                          aria-labelledby="v-pills-face-tab">
+                          <div class="d-flex">
+                            <strong><span class="fs-5 justify-content-center ">Face Recognition</span></strong>
+                          </div>
+                          A facial recognition attendance system is a contactless way to manage visitors and employees in an organization. 
+                          <br><a href="Product - Face Recognition.html">Learn more...</a>
+                        </div>
+    
+    
+                        <div class="tab-pane fade" id="v-pills-meeting" role="tabpanel"
+                          aria-labelledby="v-pills-meeting-tab">
+                          <div class="d-flex">
+                            <strong><span class="fs-5 justify-content-center ">Meeting Action Software</span></strong>
+                          </div>
+                          Our application will generate minutes of meetings for you. You will get all the action items along with name and date, scheduled events, all of the attendees information.
+                          <br><a href="Product - Meeting.html">Learn more...</a>
+                        
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                          aria-labelledby="v-pills-settings-tab">
+                          <div class="d-flex">
+                            <strong><span class="fs-5 justify-content-center ">AI Chatbot</span></strong>
+                          </div>
+                          Conversational AI allows artificial intelligence (AI) technologies like chatbots to interact with people in a humanlike way. With conversational AI you can go beyond just translating website content into simple chatbot responses. 
+                          <br><a href="Product - Chatbot.html">Learn more...</a>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mainitem" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mainitem" href="contacts.html">Contact Us</a>
+              </li>
+    
+            </ul>
+            <!-- <a role="button" class="btn btn-primary">Get in Touch</a> -->
+    
+          </div>
+        </div>
+      </nav>
+
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
+  <!-- End Header -->
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <!-- <div class="col-lg-4 col-sm-4">
-                    <div class="info-stat">
-                      <h6>Xz</h6>
-                      <h4>Little info</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="info-stat">
-                      <h6>Latest product</h6>
-                      <h4>$720h</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="info-stat">
-                      <h6>Schedules</h6>
-                      <h4>Anytime</h4>
-                    </div>
-                  </div> -->
 
-                  <div class="col-lg-12">
-                    <!-- <h2>Top IoT &amp; AI development Agency in India</h2> -->
 
-                    <div class="align-self-center">
-                      <h1 class="">ADSPL is the Top IoT and AI development agency in India</h1>
-                        <h3 class="pt-3 ">join our early happy clients and get special discount.</h3>
-                        
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-green-button scroll-to-section">
-                      <a href="#contact">Get Your Quote</a>
-                    </div>
-                  </div>
-                </div>
+
+
+
+
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+
+
+
+    
+    <div id="carouselMainProducts" class="carousel slide carousel" data-bs-ride="carousel">
+        <div class="carousel-inner text-white">
+  
+          <div class="carousel-item active" data-bs-interval="3000">
+            <div class="row p-5 text-center w-100 " id="maintagline">
+              <div class="align-self-center">
+
+                <h2 class="animate__animated animate__fadeInDown"><span>Think Creative</span> <span>Think Innovative</span> <span>Think Digital</span></h2>
+          <p class="animate__animated fanimate__adeInUp">achieve digital transformation with us...</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        
               </div>
             </div>
-            <div class="col-lg-6">
-
-              <div id="carouselMainProducts" class="carousel slide carousel" data-bs-ride="carousel">
-                <div class="carousel-inner text-white">
-          
-                  <div class="carousel-item active" data-bs-interval="3000">
-                    <div class="d-flex row p-5 text-center  " id="maintagline">
-                      <div class="align-self-center">
-                        <h1 class="">Think Creative</h1>
-                        <h1 class="">Think Innovative</h1>
-                        <h1 class="">Think Digital</h1>
-                        <h3 class=" p-3 mt-4">achieve digital transformation with us...</h3>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <!-- <div class="carousel-item" data-bs-interval="3000">
-                    <div class="d-flex p-5 text-center " id="maintagline">
-                      <div class="align-self-center">
-                        <h1 class="">ADSPL is the Top IoT and AI development agency in India</h1>
-                        <h3 class="p-3 mt-4">join our early happy clients and get special discount.</h3>
-                        <div>
-                          <a href="company.html" type="button" class="btn btn-primary btn-lg p-3 mx-3 bigcircularbutton1">Read more</a>
-                          <a href="contacts.html" type="button" class="btn btn-primary btn-lg p-3 bigcircularbutton1">Get in touch</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-          
-                  <div class="carousel-item" data-bs-interval="3000">
-                    <div class="d-flex  p-5 text-center " id="maintagline">
-                      <div class="align-self-center">
-                        <h1 class="">enjoy the experience of life in the future</h1>
-                        <h3 class="p-3 mt-4">a series of “Intelli+Save” products for your Smart Home</h3>
-                        <div>
-                          <a href="Product - Smart Devices.html" type="button" class="btn btn-primary btn-lg p-3 mx-3 bigcircularbutton1">Read more</a>
-                          <a href="contacts.html" type="button" class="btn btn-primary btn-lg p-3 bigcircularbutton1">Request Demo</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <div class="carousel-item " data-bs-interval="3000">
-                    <div class="d-flex  p-5 text-center " id="maintagline">
-                      <div class="align-self-center">
-                        <h1 class="">Agri IoT Products</h1>
-                        <h3 class=" p-3 mt-4">a smart IOT device that can
-                          assist the farmers in farming in various stages of the crop</h3>
-                        <div>
-                          <a href="" type="button" class="btn btn-primary btn-lg p-3 mx-3 bigcircularbutton1">Read more</a>
-                          <a href="" type="button" class="btn btn-primary btn-lg p-3 bigcircularbutton1">Request Demo</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-          
-                  <div class="carousel-item" data-bs-interval="3000">
-          
-                    <div class="d-flex  p-5 text-center " id="maintagline">
-                      <div class="align-self-center">
-                        <h1 class="">Go beyond chatbots with Conversational AI!</h1>
-                        <h3 class=" p-3 mt-4">make machines capable of understanding, processing and responding to human language.
-                        </h3>
-                        <div>
-                          <a href="Product - Chatbot.html" type="button" class="btn btn-primary btn-lg p-3 mx-3 bigcircularbutton1">Read more</a>
-                          <a href="contacts.html" type="button" class="btn btn-primary btn-lg p-3 bigcircularbutton1">Request Demo</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <div class="carousel-item" data-bs-interval="3000">
-          
-                    <div class="d-flex  p-5 text-center " id="maintagline">
-                      <div class="align-self-center">
-                        <h1 class="">Right Time, Right Inventory, Maximum Profits</h1>
-                        <h3 class="p-3 mt-4">
-                          Inventory and Sales Prediction Software - MaxSales
-                        </h3>
-                        <div>
-                          <a href="Product - Inventory.html" type="button"
-                            class="btn btn-primary btn-lg p-3 mx-3 bigcircularbutton1">Read more</a>
-                          <a href="contacts.html" type="button" class="btn btn-primary btn-lg p-3 bigcircularbutton1">Request Demo</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainProducts" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMainProducts" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+          </div>
+  
+  
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="row p-5 text-center w-100" id="maintagline">
+              <div class="align-self-center">
+                <h2 class="animate__animated animate__fadeInDown">enjoy the experience of life in the future</h2>
+                <p class="animate__animated fanimate__adeInUp">a series of “Intelli+Save” products for your Smart Home</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request Demo</a>
+              
+                
               </div>
-          
+            </div>
+          </div>
+  
+          <div class="carousel-item " data-bs-interval="3000">
+            <div class="row p-5 text-center w-100" id="maintagline">
+              <div class="align-self-center">
+
+                <h2 class="animate__animated animate__fadeInDown">Agri IoT Products</h2>
+                <p class="animate__animated fanimate__adeInUp">a smart IOT device that can
+                    assist the farmers in farming in various stages of the crop</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request Demo</a>
+              
 
 
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="carousel-item" data-bs-interval="3000">
+  
+            <div class="row p-5 text-center w-100" id="maintagline">
+              <div class="align-self-center">
+                <h2 class="animate__animated animate__fadeInDown">Go beyond chatbots with Conversational AI!</h2>
+                <p class="animate__animated fanimate__adeInUp">make machines capable of understanding, processing and responding to human language.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request Demo</a>
+              
 
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item" data-bs-interval="3000">
+  
+            <div class="row p-5 text-center w-100" id="maintagline">
+              <div class="align-self-center">
 
-              <!-- <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/banner-right-image.png" alt="">
-              </div> -->
+                <h2 class="animate__animated animate__fadeInDown">Right Time, Right Inventory, Maximum Profits <span>Selecao</span></h2>
+                <p class="animate__animated fanimate__adeInUp">Inventory and Sales Prediction Software - MaxSales</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request Demo</a>
+              
+              </div>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainProducts" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMainProducts" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-  </div>
 
-  <div id="features" class="features section">
+
+
+
+
+
+
+
+
+
+
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+
+
+ 
+
+  <div id="features" class="features section mt-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
