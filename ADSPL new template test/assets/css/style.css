@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   background: #ef6603;
 }
-/* 
+
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
-} */
+}
 
 /**
 * Mobile Navigation 

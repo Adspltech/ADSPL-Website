@@ -11,10 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
     <title>SEO Dream - Creative SEO HTML5 Template by TemplateMo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
 
     <!-- Additional CSS Files -->
@@ -41,6 +44,7 @@ https://templatemo.com/tm-563-seo-dream
  
 <style>
 
+
   .mainitem{
     font-weight: 600;
     
@@ -65,6 +69,7 @@ https://templatemo.com/tm-563-seo-dream
     top: 60px;
     background-color: transparent;
     
+    
     border: none;
   /* 
     animation: fadeInLeft;
@@ -81,7 +86,18 @@ https://templatemo.com/tm-563-seo-dream
   #productmenu {
     background-color: white;
     color: black;
+    
   }
+
+.dd-custom{
+  padding: 20px;
+  background-color: white;
+    color: black;
+}
+
+
+
+
   #productmenu button{
     
     color: black;
@@ -99,6 +115,11 @@ https://templatemo.com/tm-563-seo-dream
   }
   #aboutmenu a{
     color: black;
+  }
+
+  #what-we-do-menu a{
+    color: black;
+
   }
   
   
@@ -137,17 +158,17 @@ https://templatemo.com/tm-563-seo-dream
         <a href="index.html"><img src="assets/images/adspl.png" alt="" class="img-fluid" style="width: auto;"></a>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-4 " id="darkmenu">
+      <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-4 " id="menunavbar">
         <div class="container-fluid">
           <!-- <a class="navbar-brand ps-2" href="index.html">
             <img src="assets/images/adspl.png" alt="" height="75">
           </a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          <button class="navbar-toggler menubutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav   ms-auto mb-2 mb-lg-0 ">
+          <div class="collapse navbar-collapse navcollapsediv" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
                 <a class="nav-link active mainitem" aria-current="page" href="index.html">Home</a>
               </li>
@@ -157,7 +178,7 @@ https://templatemo.com/tm-563-seo-dream
                   About
                 </a>
                 <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="aboutmenu">
-                  <div class="row p-5 pt-3  shadow-lg">
+                  <div class="row p-5 pt-3 shadow-lg">
                     <div class="col-md-6">
                       <div class="d-flex flex-column  " style="width: 90%;">
                         
@@ -179,16 +200,16 @@ https://templatemo.com/tm-563-seo-dream
                   data-bs-toggle="dropdown" aria-expanded="false">
                   What We Do
                 </a>
-                <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="what-we-do-menu">
-                  <div class="row p-5 pt-3  shadow-lg">
+                <div class="dropdown-menu  dd-custom" aria-labelledby="navbarDropdown" id="what-we-do-menu">
+                  <div class="row">
                     <div class="col-md-6">
                       <div class="d-flex flex-column  " style="width: 90%;">
                         <div class="d-flex">
                           <strong><span class="fs-5 justify-content-center ">Solutions</span></strong>
                         </div>
                         <hr>
-                        <ul class="flex-column mb-auto list-unstyled ">
-                          <li><a class="nav-link link-dark" href="#">IoT Solutions</a></li>
+                        <ul class="flex-column mb-auto list-unstyled">
+                          <li><a class="nav-link link-dark " href="#">IoT Solutions</a></li>
                           <li><a class="nav-link link-dark" href="#">Data Analytics & Management Solutions</a></li>
                           <li><a class="nav-link link-dark" href="#">AR/VR Solutions</a></li>
                         </ul>
@@ -228,7 +249,7 @@ https://templatemo.com/tm-563-seo-dream
                   Products
                 </a>
                 <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="productmenu">
-                  <div class="row shadow-lg">
+                  <div class="row">
                     <div class="d-flex align-items-start" id="prodmenutabs">
                       <div class="nav flex-column nav-pills me-3 col-md-4 prodpills" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical">
@@ -398,7 +419,7 @@ https://templatemo.com/tm-563-seo-dream
             <div class="row p-5 text-center w-100" id="maintagline">
               <div class="align-self-center">
 
-                <h2 class="animate__animated animate__fadeInDown">Right Time, Right Inventory, Maximum Profits <span>Selecao</span></h2>
+                <h2 class="animate__animated animate__fadeInDown">Right Time, Right Inventory, Maximum Profits</h2>
                 <p class="animate__animated fanimate__adeInUp">Inventory and Sales Prediction Software - MaxSales</p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request Demo</a>
@@ -944,18 +965,18 @@ https://templatemo.com/tm-563-seo-dream
 
                 <div id="carouselMeetDirector" class="carousel carousel-dark slide " data-bs-ride="carousel">
                   <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselMeetDirector" data-bs-slide-to="0" class="active"
+                    <!-- <button type="button" data-bs-target="#carouselMeetDirector" data-bs-slide-to="0" class="active"
                       aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselMeetDirector" data-bs-slide-to="1"
                       aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselMeetDirector" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
+                      aria-label="Slide 3"></button> -->
                   </div>
                   <div class="carousel-inner ">
                     <div class="carousel-item active " data-bs-interval="5000">
                       <div class="card mb-3 p-3">
                         <div class="">
-                          <img src="ADSPL new template test/assets/images/Vikas.jpg" class="img-fluid rounded-start mb-2" alt="...">
+                          <img src="assets/images/Vikas.jpg" class="img-fluid rounded-start mb-2" alt="...">
                           <!-- <p >Founder</p> -->
                           <h5 class="">Vikas Bhadoria</h5>
                           <p class="card-text"><small class="text-muted">Director</small></p>
@@ -966,7 +987,7 @@ https://templatemo.com/tm-563-seo-dream
                     <div class="carousel-item " data-bs-interval="5000">
                       <div class="card mb-3 p-3">
                         <div class="">
-                          <img src="ADSPL new template test/assets/images/Rakhi-Bhadoria.jpg" class="img-fluid rounded-start mb-2" alt="...">
+                          <img src="assets/images/Rakhi-Bhadoria.jpg" class="img-fluid rounded-start mb-2" alt="...">
                           <!-- <p >Founder</p> -->
                           <h5 class="">Rakhi Bhadoria</h5>
                           <p class="card-text"><small class="text-muted">Director</small></p>
@@ -977,7 +998,7 @@ https://templatemo.com/tm-563-seo-dream
                     <div class="carousel-item " data-bs-interval="5000">
                       <div class="card mb-3 p-3">
                         <div class="">
-                          <img src="ADSPL new template test/assets/images/Vivek.jpg" class="img-fluid rounded-start mb-2" alt="...">
+                          <img src="assets/images/Vivek.jpg" class="img-fluid rounded-start mb-2" alt="...">
                           <!-- <p >Founder</p> -->
                           <h5 class="">Vivek Bhadoria</h5>
                           <p class="card-text"><small class="text-muted">Director</small></p>
@@ -985,7 +1006,7 @@ https://templatemo.com/tm-563-seo-dream
                       </div>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMeetDirector"
+                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselMeetDirector"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -994,7 +1015,7 @@ https://templatemo.com/tm-563-seo-dream
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                  </button>
+                  </button> -->
                 </div>
               </div>
             </div>
@@ -1021,6 +1042,21 @@ https://templatemo.com/tm-563-seo-dream
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  <script>
+    	// Header Type = Fixed
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var header = $('header').height();
+    if (scroll >= header) {
+      $("header").removeClass("header-transparent");
+    } else {
+      $("header").addClass("header-transparent");
+    }
+  });
+
+
+  </script>
 
 </body>
 </html>
