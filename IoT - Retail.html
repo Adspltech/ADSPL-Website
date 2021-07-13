@@ -9,108 +9,233 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link href="home.css" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: comf;
-      src: url(assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
-    }
+    <link rel="stylesheet" href="assets/css/home.css">
 
-    body {
-      /* background-color: black; */
-      font-family: comf;
-      /* background-color: blue; */
-    }
-
-    nav {
-      font-weight: 900;
-      font-size: x-large;
-    }
-
-
-    #maintagline {
-      /* height: 90vh; */
-      height: 100%;
-    }
-
-    #maintagline h1 {
-      font-weight: 1000;
-      /* font-size: xx-large; */
-      /* font-size: 11vh; */
-      font-size: 440%;
-    }
-
-    #maintagline button {
-      background-color: white;
-      color: black;
-      border-radius: 60px;
-      font-weight: 1000;
-      font-size: x-large;
-      /* height: 70px; */
-    }
-
-    #frame2 {
-      height: 90%;
-    }
-
-
-    #frame-t2 {
-      background-color: lightskyblue;
-      /* color: black; */
-    }
-
-
-
-    #frame-t2 h1 {
-      font-weight: 1000;
-      /* font-size: xx-large; */
-      /* font-size: 11vh; */
-      font-size: 440%;
-    }
-
-    #frame-t2 button {
-      background-color: white;
-      color: lightskyblue;
-      border-radius: 60px;
-      font-weight: 1000;
-      font-size: x-large;
-      /* height: 70px; */
-    }
-  </style>
   <title>ADSPL is the Top IoT and AI development agency in India</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 pt-5">
+  <nav class="navbar navbar-expand-lg navbar-dark p-3 pt-4 " id="darkmenu">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand ps-2" href="index.html">
+        <img src="assets/images/adspl.png" alt="" style="width: 70px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand  px-5 fs-1" href="#">
-        <!-- ADSPL -->
-        <img src="assets/images/adspl.png" alt="" height="75">
-      </a>
-      <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-5">
-          <li class="nav-item ms-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav   ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active mainitem" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link" href="#">About</a>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle mainitem" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="aboutmenu">
+              <div class="row p-5 pt-3  shadow-lg">
+                <div class="col-md-6">
+                  <div class="d-flex flex-column  " style="width: 90%;">
+
+                    <ul class="flex-column mb-auto list-unstyled ">
+                      <li><a class="nav-link link-dark" href="company.html">Company</a></li>
+                      <li><a class="nav-link link-dark" href="#">How We Work</a></li>
+                      <!-- <li><a class="nav-link link-dark" href="#">Testimonials</a></li> -->
+                    </ul>
+                    <hr>
+                  </div>
+                </div>
+              </div>
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link" href="#">Products</a>
+          <li class="nav-item">
+            <a class="nav-link mainitem" href="portfolio.html">Portfolio</a>
           </li>
-          <li class="nav-item ms-2 me-4">
-            <a class="nav-link" href="#">What We Do</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mainitem" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              What We Do
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="what-we-do-menu">
+              <div class="row p-5 pt-3  shadow-lg">
+                <div class="col-md-6">
+                  <div class="d-flex flex-column  " style="width: 90%;">
+                    <div class="d-flex">
+                      <strong><span class="fs-5 justify-content-center ">Solutions</span></strong>
+                    </div>
+                    <hr>
+                    <ul class="flex-column mb-auto list-unstyled ">
+                      <li><div class="accordion bg-transparent" id="accordionExample">
+                        <div class="accordion-item bg-transparent">
+                          <h2 class="accordion-header bg-transparent" id="headingOne">
+                            <a class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              IoT Solutions
+                            </a>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <ul class="flex-column mb-auto list-unstyled ">
+                                <li><a class="nav-link link-dark" href="IoT - Industrial.html">Industrial IoT</a></li>
+                                <li><a class="nav-link link-dark" href="IoT - Agricultural.html">Agricultural IoT</a></li>
+                                <li><a class="nav-link link-dark" href="IoT - Retail.html">Retail IoT</a></li>
+                                <li><a class="nav-link link-dark" href="IoT - Automative.html">Automative IoY</a></li>
+                                <li><a class="nav-link link-dark" href="IoT - Health Care.html">Health care IoY</a></li>
+                                <li><a class="nav-link link-dark" href="IoT - Smart City.html">Smart city IoT</a></li>
+                              </ul>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item  bg-transparent">
+                          <h2 class="accordion-header  bg-transparent" id="headingTwo">
+                            <a class="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Data Analytics & Management Solutions
+                            </a>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <ul class="flex-column mb-auto list-unstyled ">
+                                <li><a class="nav-link link-dark" href="Solutions - AI.html">Artificial Intellegence</a></li>
+                                <li><a class="nav-link link-dark" href="Solutions - ML.html">Machine Learning</a></li>
+                              </ul>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </li>
+                    <li><a class="nav-link link-dark" href="Solutions - AR-VR.html">AR/VR Solutions</a></li>
+                      
+                    </ul>
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="d-flex flex-column  " style="width: 90%;">
+                    <div class="d-flex">
+                      <strong><span class="fs-5 justify-content-center ">Services</span></strong>
+                    </div>
+                    <hr>
+                    <ul class="flex-column mb-auto list-unstyled ">
+                      <li><a class="nav-link link-dark" href="Services - IoT Software Development.html">IoT Software Development</a></li>
+                      <li><a class="nav-link link-dark" href="Services -  Software Product Development.html">Software Product Development</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Custom Software Development copy.html">Custom Software Development</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Technology Consulting and Prototyping.html">Technology Consulting Prototyping</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Dedicated Development Teams.html">Dedicated Development Teams</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Software Re-engineering.html">Software Re-engineering</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Customization And Enhancement.html">Customization And Enhancement</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Web Application Development.html">Web Application Development</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Mobile App Development.html">Mobile App Development</a></li>
+                      <li><a class="nav-link link-dark" href="Services - Services For Start Up.html">Services For Start Up</a></li>
+                    </ul>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mainitem" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu dd-custom" aria-labelledby="navbarDropdown" id="productmenu">
+              <div class="row shadow-lg">
+                <div class="d-flex align-items-start" id="prodmenutabs">
+                  <div class="nav flex-column nav-pills me-3 col-md-4 prodpills p-2" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-smartdevices-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-smartdevices" type="button" role="tab"
+                      aria-controls="v-pills-smartdevices" aria-selected="true">Smart Device - IOT</button>
+                    <button class="nav-link" id="v-pills-inventory-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-inventory" type="button" role="tab" aria-controls="v-pills-inventory"
+                      aria-selected="false">Inventory & Sales Prediction</button>
+                    <button class="nav-link" id="v-pills-face-tab" data-bs-toggle="pill" data-bs-target="#v-pills-face"
+                      type="button" role="tab" aria-controls="v-pills-face" aria-selected="false">Face
+                      Recognition</button>
+                    <button class="nav-link" id="v-pills-meeting-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-meeting" type="button" role="tab" aria-controls="v-pills-meeting"
+                      aria-selected="false">Meeting Action Software</button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                      aria-selected="false">AI Chatbot</button>
+                  </div>
+                  <div class="tab-content p-3" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active " id="v-pills-smartdevices" role="tabpanel"
+                      aria-labelledby="v-pills-smartdevices-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Smart Device - IOT</span></strong>
+                      </div>
+                      ADSPL is bringing a series of “Intelli+Save” products for your Smart Home which will be truly a
+                      steppingstone for anyone who wants to enjoy the experience of life in the future.
+                      <br><a href="Product - Smart Devices.html">Learn more...</a>
+                    </div>
+                    <div class="tab-pane fade " id="v-pills-inventory" role="tabpanel"
+                      aria-labelledby="v-pills-inventory-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Inventory & Sales Prediction</span></strong>
+                      </div>
+                      Our Inventory and Sales Prediction Software “MaxSales” will help businesses predict the sales and
+                      management of their products beforehand.
+                      <br><a href="Product - Inventory.html">Learn more...</a>
+                    </div>
+
+                    <div class="tab-pane fade " id="v-pills-face" role="tabpanel" aria-labelledby="v-pills-face-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Face Recognition</span></strong>
+                      </div>
+                      A facial recognition attendance system is a contactless way to manage visitors and employees in an
+                      organization.
+                      <br><a href="Product - Face Recognition.html">Learn more...</a>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="v-pills-meeting" role="tabpanel"
+                      aria-labelledby="v-pills-meeting-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">Meeting Action Software</span></strong>
+                      </div>
+                      Our application will generate minutes of meetings for you. You will get all the action items along
+                      with name and date, scheduled events, all of the attendees information.
+                      <br><a href="Product - Meeting.html">Learn more...</a>
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab">
+                      <div class="d-flex">
+                        <strong><span class="fs-5 justify-content-center ">AI Chatbot</span></strong>
+                      </div>
+                      Conversational AI allows artificial intelligence (AI) technologies like chatbots to interact with
+                      people in a humanlike way. With conversational AI you can go beyond just translating website
+                      content into simple chatbot responses.
+                      <br><a href="Product - Chatbot.html">Learn more...</a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mainitem" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mainitem" href="contacts.html">Contact Us</a>
           </li>
 
         </ul>
+        <!-- <a role="button" class="btn btn-primary">Get in Touch</a> -->
 
       </div>
     </div>
   </nav>
+
+
 
 
   <main>
@@ -166,6 +291,46 @@
 
   </main>
 
+
+  <footer>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="assets/images/adspl.png" alt="" style="width: 90px;">
+          <small class="d-block mb-3 text-muted">&copy; 2019–2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="fw-bolder">Useful links</h5>
+          <ul class="list-unstyled text-small  ">
+            <li class="mb-1"><a class="link-secondary text-decoration-none " href="index.html">Home</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="company.html">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">How We Work</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="portfolio.html">Portfolio</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="fw-bolder">Solutions</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">IoT Solutions</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Data Analytics & IoT Solutions</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">AR/VR Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="fw-bolder">Contact info</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
 
 
 
