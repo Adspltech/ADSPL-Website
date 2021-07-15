@@ -58,6 +58,7 @@ h6 {
 #productmenu {
   background-color: black;
   color: white;
+  
 }
 #what-we-do-menu {
   background-color: black;
@@ -78,16 +79,16 @@ h6 {
   /* color: aliceblue; */
 }
 
-#prodmenutabs button.active {
+/* #prodmenutabs button.active {
   background-color: beige;
   color: black;
-
-}
+} */
 
 #darkmenu {
   /* background-color: chartreuse; */
   /* background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%); */
-  background-color: rgb(51, 54, 73);
+  /* background-color: rgb(51, 54, 73); */
+  background: #4b9fe1;
 }
 
 
@@ -120,11 +121,18 @@ animation-duration: .6s;
 footer{
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: rgb(5,47,119);
+  /* background-color: rgb(5,47,119); */
+  background-color: #E8E8E8;
 }
 footer h5{
   font-weight: 400;
-  color: white;
+  /* color: white; */
+  color: #444444;
+}
+
+footer a:hover{
+  color: #fc8129;
+  text-decoration: none;
 }
 
 #soclinks span{
