@@ -227,7 +227,7 @@ body {
   border-bottom: 2px solid #4771cb!important;
 }
 
-.main-green-button a {
+/* .main-green-button a {
   display: inline-block;
   background-color: #33ccc5;
   font-size: 15px;
@@ -239,7 +239,36 @@ body {
   letter-spacing: 0.25px;
   border-bottom: 2px solid #4771cb!important;
   transition: all .3s;
+} */
+
+
+.main-new-button a {
+  display: inline-block;
+  background-color: transparent;
+  /* font-size: 15px; */
+  font-size: 17px;
+  font-weight: 600;
+  color: #df3062;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  border: 2px solid #df3062;
+  border-width: thin;
+  letter-spacing: 0.25px;
+  transition: all .3s;
 }
+
+.main-new-button a:hover {
+  background-color: #df3062!important;
+  color: #fff!important;
+  /* border-bottom: 2px solid #33ccc5!important; */
+}
+
+
+
+
+
+
 
 .main-green-button a:hover {
   background-color: #4771cb!important;
@@ -976,8 +1005,9 @@ Features Style
 }
 
 .features-item:hover {
-  background: rgb(51,204,197);
-  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  /* background: rgb(51,204,197); */
+  /* background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%); */
+  background: #f5b935;
 }
 
 .features-item:hover h4 {
@@ -1316,7 +1346,8 @@ About Us Style
 .about-us .about-item h4 {
   font-size:38px;
   font-weight: 800;
-  color:#088ec3;
+  /* color:#088ec3; */
+  color: #444444;
 }
 
 .about-us .about-item h6 {
@@ -1368,8 +1399,7 @@ Services Style
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 
   /* my changes */
-  background: rgb(51,204,197);
-  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  background: #f5b935;
 
 }
 
@@ -1521,6 +1551,7 @@ contact
   margin-top: 90px;
   padding: 120px 0px;
   background-image: url(../images/contact-bg.jpg);
+  /* background: #4bac3f; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1614,25 +1645,22 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #33ccc5;
+  background-color: transparent;
   font-size: 15px;
-  font-weight: 400;
-  color: #fff;
-  margin-top: 20px;
+  font-weight: 600;
+  color: #df3062;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
+  border: 2px solid #df3062;
+  border-width: thin;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #4771cb!important;
   transition: all .3s;
-  outline: none;
-  border: none;
 }
 
 form#contact button:hover {
-  background-color: #4771cb!important;
+  background-color: #df3062!important;
   color: #fff!important;
-  border-bottom: 2px solid #33ccc5!important;
 }
 
 /* 

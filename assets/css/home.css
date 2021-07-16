@@ -88,7 +88,8 @@ h6 {
   /* background-color: chartreuse; */
   /* background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%); */
   /* background-color: rgb(51, 54, 73); */
-  background: #4b9fe1;
+  /* background: #4b9fe1; */
+  background: #11abc1;
 }
 
 
@@ -122,7 +123,7 @@ footer{
   padding-top: 25px;
   padding-bottom: 25px;
   /* background-color: rgb(5,47,119); */
-  background-color: #E8E8E8;
+  background-color: #11abc1;
 }
 footer h5{
   font-weight: 400;
