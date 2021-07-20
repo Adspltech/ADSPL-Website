@@ -1,7 +1,8 @@
 
 /* trials starts */
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
   color: #444444;
 }
 
@@ -163,6 +164,13 @@ footer h5{
   /* color: white; */
   color: #444444;
 }
+#footercontainer a{
+  color: white;
+}
+.foohead{
+  color: white;
+}
+
 
 footer a:hover{
   color: #fc8129;
@@ -257,6 +265,13 @@ footer a:hover{
 .testimo-card{
   height: 300px;
 }
+
+
+/* @media (max-width: 768px) {
+  .testimo-card{
+    height: 100px;
+  }
+} */
 
 
 .circular-button {
