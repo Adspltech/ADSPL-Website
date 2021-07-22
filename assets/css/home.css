@@ -1,3 +1,21 @@
+:root{
+  --mycolor-1:#11abc1;    /* wave background, navbar background,  */
+  --mycolor-2:#df3062;
+  --mycolor-3:#f5b935;
+  --mycolor-4:#4bac3f;
+
+
+  --mycolor-5:#fc8129;   /* link hover */
+
+  
+
+}
+
+
+
+
+
+
 
 /* trials starts */
 body {
@@ -67,7 +85,8 @@ h6 {
   font: bold;
 }
 #productmenu a:hover{
-  color: #fc8129;
+  /* color: #fc8129; */
+  color: var(--mycolor-5);
 }
 
 #productmenu button{
@@ -305,14 +324,36 @@ footer a:hover{
 } */
 
 
-/* homepage style start */
+/* homepage style ends */
 
 
 
 
+
+
+/* COMMON CSS FOR ALL PAGES */
+
+/* for main heading of each page */
+#mainheading{
+  background-image: url(../images/gif/3d08e03cb40252526fee2036a67f07f1.gif);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CHANGES */
 @media (max-width: 767px){
-
-
 
   
 .dropdown:hover .dropdown-menu {
