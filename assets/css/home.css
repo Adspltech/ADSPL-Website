@@ -40,8 +40,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+p{
+  text-align: justify;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 
 
@@ -95,6 +102,13 @@ h6 {
 #productmenu button:hover{
   color: #fc8129;
 }
+
+#prodmenutabs button.active{
+  background-color: transparent;
+  color: #fc8129;
+}
+
+
 
 .prodpills{
   border: black;
@@ -169,6 +183,24 @@ border: none;
 animation: fadeInDown;
 animation-duration: .6s;
 }
+
+
+
+
+
+
+
+
+.heading-highlight{
+  color: var(--mycolor-3);
+}
+
+
+
+
+
+
+
 
 
 
