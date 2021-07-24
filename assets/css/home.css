@@ -17,7 +17,7 @@
 
 
 
-/* trials starts */
+/* Global changes */
 body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: 'Source Sans Pro', sans-serif;
@@ -57,9 +57,11 @@ p{
 
 
 
-/* trials ends */
+/* Menu properties */
 
-
+.navbar-brand img{
+  width: 100px;
+}
 
 
 .mainitem {
