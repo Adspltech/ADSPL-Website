@@ -1383,14 +1383,17 @@ Services Style
 }
 
 .service-item {
-  padding: 60px 30px;
-  border: 2px solid #f7f7f7;
+  /* padding: 60px 30px; */
+
+  /* border: 2px solid #f7f7f7; */
   border-radius: 5px;
   transition: all .3s;
   margin-bottom: 30px;
 
   /* my changes */
   height: 100%;
+  padding: 20px 30px;
+  border: 5px solid #f7f7f7;
 }
 
 .service-item:hover {
@@ -1750,6 +1753,15 @@ responsive
   form#contact {
     padding: 45px;
   }
+
+
+
+  .our-services .container-fluid {
+    padding: 0px 40px;
+  }
+
+
+
 }
 
 @media (max-width: 767px) {
