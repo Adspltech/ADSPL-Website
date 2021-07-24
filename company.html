@@ -20,12 +20,13 @@
   <link rel="stylesheet" href="/vendor/OwlCarousel2/owl.carousel.min.css">
   <link rel="stylesheet" href="/vendor/OwlCarousel2/owl.theme.default.min.css">
 
-   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
   </script>
   <script>
     $(function () {
       $("#menu").load("menu.html");
-      $("#footer").load("footer.html"); 
+      $("#footer").load("footer.html");
     });
   </script>
 
@@ -44,35 +45,47 @@
     }
 
     #what-we-value svg {
-      color:var(--mycolor-3);
+      color: var(--mycolor-3);
     }
 
     #info-stats svg {
-      color:var(--mycolor-3);
+      color: var(--mycolor-3);
     }
 
-    .partner-card{
+    .partner-card {
       width: 18rem;
       height: 100%;
     }
-    .owl-next, .owl-prev {
-    width: 22px;
-    height: 40px;
-    margin-top: -20px;
-    position: absolute;
-    top: 30%;
-  }
-  .owl-prev {
-    left: -20px;
-  }
-  .owl-next {
-    right: -20px;
-  }
+
+    #directors img{
+      padding: 30px;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+
+    }
+
+    .owl-next,
+    .owl-prev {
+      width: 22px;
+      height: 40px;
+      margin-top: -20px;
+      position: absolute;
+      top: 30%;
+    }
+
+    .owl-prev {
+      left: -20px;
+    }
+
+    .owl-next {
+      right: -20px;
+    }
   </style>
 </head>
 
 <body>
- 
+
   <div id="menu"></div>
 
 
@@ -297,7 +310,7 @@
 
 
 
-<!-- 
+        <!-- 
 
         <div class="py-5 text-center bg-light">
           <div class="" id="trusted by">
@@ -409,7 +422,7 @@
 
 
 
-        
+
 
         <div class="py-5 text-center bg-light">
           <!-- <h1 class="text-white">ADSPL is the Top IoT and AI development agency in India</h1> -->
@@ -421,37 +434,37 @@
               <div class="col-md-10 ">
 
                 <div class="owl-carousel  owl-theme p-3">
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <div class="card d-flex partner-card">
                       <img src="assets/images/vendor-logo-1.jpg" class="card-img-top" alt="...">
                     </div>
                   </div>
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <div class="card d-flex partner-card">
                       <img src="assets/images/vendor-logo-2.jpg" class="card-img-top" alt="...">
                     </div>
                   </div>
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <div class="card d-flex partner-card">
                       <img src="assets/images/vendor-logo-3.jpg" class="card-img-top" alt="...">
                     </div>
                   </div>
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <div class="card d-flex partner-card">
                       <img src="assets/images/vendor-logo-4.jpg" class="card-img-top" alt="...">
                     </div>
                   </div>
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <div class="card d-flex partner-card">
                       <img src="assets/images/vendor-logo-5.jpg" class="card-img-top" alt="...">
                     </div>
                   </div>
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <div class="card d-flex partner-card">
                       <img src="assets/images/vendor-logo-6.jpg" class="card-img-top" alt="...">
                     </div>
                   </div>
-                  <div>
+                  <div class="d-flex justify-content-center">
                     <div class="card d-flex partner-card">
                       <img src="assets/images/vendor-logo-7.jpg" class="card-img-top" alt="...">
                     </div>
@@ -461,13 +474,13 @@
             </div>
           </div>
         </div>
-       
 
 
 
 
 
-<!-- 
+
+        <!-- 
 
         <div class="p-5">
           
@@ -514,7 +527,7 @@
  -->
 
 
-        
+
 
 
 
@@ -707,25 +720,22 @@
 
 
 
-        <div class="bg-light">
-          <div class="container">
-            <div class="row featurette pt-5">
-
-              <div class="col-md-7">
-                <h1 class="featurette-heading">Meet with our <span class="text-muted">directors</span>
-                </h1>
-              </div>
-
-              <div class="col-md-12 m-3" data-aos="fade-up" data-aos-duration="1000">
-                <div class="card mb-3 shadow">
+        <div class="bg-light" id="directors">
+          <div class="p-4 pt-5">
+            <div class="text-center">
+              <h1 class="border-bottom">Meet with our <span class="text-muted">directors</span></h1>
+            </div>
+            <div class="row pt-5">
+              <div class="col-md-4" style="height: 100%;" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card mb-3 shadow" style="height: 100%;">
                   <div class="row g-0">
-                    <div class="col-md-3">
-                      <img src="assets/images/Vikas.jpg" class="img-fluid rounded-start" alt="...">
+                    <div class="d-flex justify-content-center">
+                      <img src="assets/images/Vikas.jpg" class="card-img-top" alt="...">
                     </div>
-                    <div class="col-md-9">
-                      <div class="card-body  ms-4">
-                        <h3 class="card-title">Vikas Bhadoria</h3>
-                        <p class="card-text">Vikas being an Alumni of IIM Lucknow has done his graduation in Civil
+                    
+                      <div class="card-body ">
+                        <h3 class="card-title text-center">Vikas Bhadoria</h3>
+                        <p class="">Vikas being an Alumni of IIM Lucknow has done his graduation in Civil
                           Engineering in Honours from MITS gwalior & has been working in Oil & Gas sector for the last
                           21 years at various managerial position handling project management as core function and has
                           started this company with the Vision to make this company a market leader in latest emerging
@@ -736,21 +746,21 @@
                           holistic solutions to enrich the life of people and society envisioning “A Better world!! A
                           Better tomorrow!!</p>
                       </div>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-12 m-3" data-aos="fade-up" data-aos-duration="1000">
-                <div class="card mb-3 shadow">
+              <div class="col-md-4" style="height: 100%;" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card mb-3 shadow" style="height: 100%;">
                   <div class="row g-0">
-                    <div class="col-md-3">
-                      <img src="assets/images/Rakhi-Bhadoria.jpg" class="img-fluid rounded-start" alt="...">
+                    <div class="d-flex justify-content-center">
+                      <img src="assets/images/Rakhi-Bhadoria.jpg" class="card-img-top" alt="...">
                     </div>
-                    <div class="col-md-9">
-                      <div class="card-body ms-4">
-                        <h3 class="card-title">Rakhi Bhadoria</h3>
-                        <p class="card-text">Rakhi is an Economics graduate and one of the founders of this company. Her
+                    
+                      <div class="card-body">
+                        <h3 class="card-title text-center">Rakhi Bhadoria</h3>
+                        <p class="">Rakhi is an Economics graduate and one of the founders of this company. Her
                           Vision is to make this company financially stable and economically viable so that we can
                           provide services to our customers at the price which is best in the Industry. She is a firm
                           believer in developing the company structure by inculcating the core values of trust, respect,
@@ -762,33 +772,31 @@
                           She is very creative and thus ensures that each & every product is being thought meticulously
                           to maintain the economic feasibility.</p>
                       </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-12 m-3" data-aos="fade-up" data-aos-duration="1000">
-                <div class="card mb-3 shadow">
+              <div class="col-md-4" style="height: 100%;" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card mb-3 shadow" style="height: 100%;">
                   <div class="row g-0">
-                    <div class="col-md-3">
-                      <img src="assets/images/Vivek.jpg" class="img-fluid rounded-start" alt="...">
+                    <div class="d-flex justify-content-center">
+                      <img src="assets/images/Vivek.jpg" class="card-img-top" alt="...">
                     </div>
-                    <div class="col-md-9">
-                      <div class="card-body ms-4">
-                        <h3 class="card-title">Vivek Bhadoria</h3>
-                        <p class="card-text">Vivek held various managerial positions in equity and finance markets & has
+                    
+                      <div class="card-body" style="height: 100%;">
+                        <h3 class="card-title text-center">Vivek Bhadoria</h3>
+                        <p class="">Vivek held various managerial positions in equity and finance markets & has
                           graduated in Masters in International Business and Marketing and one of the founders of this
                           company. His Marketing Management skills identifies market opportunities and comes out with
                           appropriate strategies for exploring those opportunities profitably.
-
-
 
                           He is committed to smoothen the process of exchange of ownership of goods and services from
                           seller to the buyer. He also provides his services to ensure planning, organising, directing
                           coordinating and controlling the product in house with our team members and get things done in
                           an organised and efficient manner.</p>
                       </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -810,7 +818,7 @@
 
 
 
-  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
   <!-- Optional JavaScript; choose one of the two! -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
@@ -823,21 +831,38 @@
   </script>
 
 
-  <script src="/vendor/OwlCarousel2/owl.carousel.min.js"></script>
+  <script src="vendor/OwlCarousel2/owl.carousel.min.js"></script>
   <script>
     var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:3,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
+    owl.owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
 
-    nav:true,
-    dots:true,
-    navText:['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>']
-});
+
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:1,
+        },
+        800:{
+          items:2,
+        },
+        1100:{
+          items:3,
+        }
+      },
+
+      nav: true,
+      dots: true,
+      navText: [
+        '<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
+        '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'
+      ]
+    });
 
 
     $(document).ready(function () {
