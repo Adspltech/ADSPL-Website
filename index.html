@@ -1264,6 +1264,33 @@
   </div>
 
 
+  <script>!(function () {
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              selector: "#webchat",
+              initPayload: "/greet",
+              customData: { "language": "en" }, // arbitrary custom data. Stay minimal as this will be added to the socket
+              socketUrl: "http://ec2-3-128-226-250.us-east-2.compute.amazonaws.com:5005",
+              //socketUrl: "http://e729826d0a3d.ngrok.io",
+              //socketPath: "/socket.io/",
+              title: "ADSPL Tech",
+              subtitle: "Lead Generation Bot",
+              params: { "storage": "session" }
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+  </script>
+
  
   <div id="footer"></div>
 
