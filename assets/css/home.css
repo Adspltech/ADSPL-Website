@@ -63,7 +63,8 @@ p{
 /* Menu properties */
 
 .navbar-brand img{
-  width: 100px;
+  /* width: 100px; */
+  width: 140px;
 }
 
 
@@ -252,7 +253,8 @@ footer a:hover{
     width: 53% !important;
     /* left: 10%; */
     right: 1%;
-    top: 65px;
+    /* top: 65px; for small logo */
+    top: 75px;
     background-color: transparent;
     border: none;
   

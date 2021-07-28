@@ -980,6 +980,9 @@ Features Style
 
 #features {
   padding-top: 130px;
+
+  
+  padding: 50px;
 }
 
 .features .features-content {
@@ -1457,6 +1460,8 @@ Portfolio
   padding-left: 0px;
 }
 
+
+
 .portfolio-item {
   margin-bottom: 30px;
   border-radius: 50px;
@@ -1533,13 +1538,19 @@ Portfolio
   font-size: 30px;
   border: 2px solid #eee;
   border-radius: 50%;
-  color: #ddd;
+  /* color: #ddd; */
+  color: white;
+  background-color: var(--mycolor-2);
   transition: all 0.5s;
 }
 
 .our-portfolio .owl-nav span:hover {
-  color: #33ccc5;
+  /* color: #33ccc5; */
   border-color: #33ccc5;
+
+  
+  color: white;
+  background-color: var(--mycolor-3);
 }
 
 
