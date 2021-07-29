@@ -20,6 +20,42 @@
     });
   </script>
 
+
+<script src=
+	"https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script type="text/javascript">
+	function sendEmail() {
+    var form = document.forms[0];
+    var name = form.name.value;
+    var surname = form.surname.value;
+    var email = form.email.value;
+    var subject = form.subject.value;
+    var message = form.message.value;
+
+	Email.send({
+		Host: "smtp.gmail.com",
+		
+    // Username: "info@adspltech.net",
+		// Password: "Adspl@@090519##",
+
+    Username: "pratik.testmail123@gmail.com",
+		Password: "Testpass@123",
+		To: 'team@adspltech.net',
+		From: "pratik.testmail123@gmail.com",
+		Subject: "Mail From Contact Us Form",
+		Body: "Name : "+name + " " + surname + "<br>" +
+          "Email : "+email + "<br>" +
+          "Subject : "+subject + "<br>" +
+          "Message : "+message + "<br>"  ,
+	})
+		.then(function (message) {
+		alert("Message Sent Successfully")
+		});
+	}
+</script>
+
   <title>ADSPL is the Top IoT and AI development agency in India</title>
 
   <style>
@@ -28,6 +64,11 @@
 contact
 --------------------------------------------- 
 */
+
+.custom-section input{
+  background-color: chartreuse;
+
+}
 
     .contact-us {
       /* margin-top: 5px; */
@@ -171,6 +212,27 @@ form#contact button:hover {
 }
 
 
+#custom-button  {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  color: #df3062;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  border: 2px solid #df3062;
+  border-width: thin;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+}
+
+
+#custom-button :hover {
+  background-color: #df3062!important;
+  color: #fff!important;
+}
+
 
 
 
@@ -195,7 +257,7 @@ form#contact button:hover {
           <div class="container">
             <div class="row">
               <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                <form id="contact" action="" method="post">
+                <form id="contact" method="post">
                   <div class="row">
                     <div class="col-lg-6 offset-lg-3">
                       <div class="section-heading">
@@ -233,9 +295,10 @@ form#contact button:hover {
                               required=""></textarea>
                           </fieldset>
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 " id="custom-section">
                           <fieldset>
-                            <button type="submit" id="form-submit" class="main-button ">Send Message Now</button>
+                            <!-- <button type="submit" id="form-submit" class="main-button " onclick="sendEmail()">Send Message Now</button> -->
+                            <input type="button" id="custom-button" value="Send Message Now" onclick="sendEmail()" />
                           </fieldset>
                         </div>
                       </div>

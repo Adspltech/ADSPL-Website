@@ -21,12 +21,57 @@
   </script>
 
 
+
+
+<script src=
+	"https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script type="text/javascript">
+	function sendEmail() {
+    var form = document.forms[0];
+    var fullname = form.fullname.value;
+    
+    var email = form.email.value;
+    var phone = form.phone.value;
+    var address = form.address.value;
+    var position = form.position.value;
+    var city = form.city.value;
+    var state = form.state.value;
+
+	Email.send({
+		Host: "smtp.gmail.com",
+
+		// Username: "info@adspltech.net",
+		// Password: "Adspl@@090519##",
+
+    Username: "pratik.testmail123@gmail.com",
+		Password: "Testpass@123",
+		To: 'team@adspltech.net',
+		From: "pratik.testmail123@gmail.com",
+		Subject: "Mail From Careers Form",
+		Body: "fullname : "+fullname +"<br>" +
+          "Email : "+email + "<br>" +
+          "phone : "+phone + "<br>" +
+          "address : "+address + "<br>" + 
+          "Email : "+email + "<br>" +
+          "position : "+position + "<br>" +
+          "state : "+state + "<br>" +
+          "city : "+city + "<br>"  ,
+	})
+		.then(function (message) {
+		alert("Your Application Submitted Successfully")
+		});
+	}
+</script>
+
+
   <title>ADSPL is the Top IoT and AI development agency in India</title>
 
  <style>
-   label{
+   /* label{
   font-family: "Raleway", sans-serif;
-}
+} */
 
  </style>
 </head>
@@ -68,49 +113,71 @@
                 <div class="card shadow-lg">
                   <div class="card-body p-5">
                     <div class="p-3">
-                      <form class="row g-3">
+                      <form class="row g-3" method="POST">
                         <div class="col-md-12">
                           <label for="inputEmail4" class="form-label">Full Name</label>
-                          <input type="email" class="form-control" id="inputEmail4">
+                          <input type="text" class="form-control" id="inputEmail4" name="fullname">
                         </div>
                         <div class="col-md-12">
                           <label for="inputEmail4" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="inputEmail4">
+                          <input type="email" class="form-control" id="inputEmail4" name="email">
                         </div>
                         <div class="col-md-12">
                           <label for="inputEmail4" class="form-label">Phone</label>
-                          <input type="email" class="form-control" id="inputEmail4">
+                          <input type="text" class="form-control" id="inputEmail4" name="phone">
                         </div>
                         
                         <div class="col-12">
                           <label for="inputAddress" class="form-label">Address</label>
-                          <input type="text" class="form-control" id="inputAddress">
+                          <input type="text" class="form-control" id="inputAddress" name="address">
                         </div>
                         <div class="col-12">
                           <label for="inputAddress2" class="form-label">Position applying for</label>
-                          <select class="form-select" aria-label="Default select example">
+                          <select class="form-select" aria-label="Default select example" name="position">
                             <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            
+                            <option value="Chief Technical Officer">Chief Technical Officer</option>
+                            <option value="Lead IOT Engineer / Solution Architect">Lead IOT Engineer / Solution Architect</option>
+                            <option value="IOT Engineer / Solution Architect">IOT Engineer / Solution Architect</option>
+                            <option value="Lead AI Engineer">Lead AI Engineer</option>
+                            <option value="AI Engineer">AI Engineer</option>
+                            <option value="Lead Full Stack Developer">Lead Full Stack Developer</option>
+                            <option value="Full Stack Developer">Full Stack Developer</option>
+                            <option value="Lead Web Developer">Lead Web Developer</option>
+                            <option value="Web Developer">Web Developer</option>
+                            <option value="Lead Application Developer (Android/IOS)">Lead Application Developer (Android/IOS)</option>
+                            <option value="Application Developer (Android/IOS)">Application Developer (Android/IOS)</option>
+                            <option value="Lead Embedded / Firmware Engineer">Lead Embedded / Firmware Engineer</option>
+                            <option value="Embedded / Firmware Engineer">Embedded / Firmware Engineer</option>
+                            <option value="Lead PCB Design Engineer">Lead PCB Design Engineer</option>
+                            <option value="PCB Design Engineer">PCB Design Engineer</option>
+                            <option value="PCB Designer">PCB Designer</option>
+                            <option value="Lead Mechatronics engineer">Lead Mechatronics engineer</option>
+                            <option value="Mechatronics engineer">Mechatronics engineer</option>
+                            <option value="Lead UI/UX design engineer">Lead UI/UX design engineer</option>
+                            <option value="UI/UX design engineer">UI/UX design engineer</option>
+                            <option value="Others">Others</option>
+
                           </select>
                         </div>
                         <div class="col-md-6">
                           <label for="inputCity" class="form-label">City</label>
-                          <input type="text" class="form-control" id="inputCity">
+                          <input type="text" class="form-control" id="inputCity" name="city">
                         </div>
                         <div class="col-md-6">
                           <label for="inputState" class="form-label">State</label>
-                          <input type="text" class="form-control" id="inputCity">
+                          <input type="text" class="form-control" id="inputCity" name="state">
                         </div>
-                        <div class="col-md-12">
+                        <!-- <div class="col-md-12">
                           <label for="formFile" class="form-label">Upload Your CV Here:</label>
                           <input class="form-control" type="file" id="formFile">
-                        </div>
+                        </div> -->
                         
                         
                         <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                          <input type="button" id="custom-button" value="Apply Now" onclick="sendEmail()" />
+                          
                         </div>
                       </form>
   
