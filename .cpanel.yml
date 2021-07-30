@@ -1,7 +1,7 @@
 ---
 deployment:
-        tasks:
-                - export DEPLOYPATH=/home/user/public_html/
+	tasks:
+		- export DEPLOYPATH=/home2/adsplbe7/public_html/
                 - /bin/cp index.html $DEPLOYPATH
                 - /bin/cp -R assets $DEPLOYPATH
                 - /bin/cp -R vendor $DEPLOYPATH
