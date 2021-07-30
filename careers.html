@@ -38,26 +38,38 @@
     var position = form.position.value;
     var city = form.city.value;
     var state = form.state.value;
+    var coverletter = form.coverletter.value;
+    var cv = form.cv.value;
+    var filename=cv.replace(/^.*[\\\/]/,'');
+    // console.log(typeof(form.cv.path));
+    console.log(cv);
+    console.log(filename);
+    // console.log(form.cv.value);
+    // console.log(form.cv.);
 
 	Email.send({
 		Host: "smtp.gmail.com",
 
-		// Username: "info@adspltech.net",
-		// Password: "Adspl@@090519##",
-
     Username: "pratik.testmail123@gmail.com",
 		Password: "Testpass@123",
-		To: 'team@adspltech.net',
+    
+		To: 'admin@adspltech.net, intern@adspltech.net, p.b.hilale@gmail.com',
 		From: "pratik.testmail123@gmail.com",
 		Subject: "Mail From Careers Form",
-		Body: "fullname : "+fullname +"<br>" +
+		Body: "Fullname : "+fullname +"<br>" +
           "Email : "+email + "<br>" +
-          "phone : "+phone + "<br>" +
-          "address : "+address + "<br>" + 
-          "Email : "+email + "<br>" +
-          "position : "+position + "<br>" +
-          "state : "+state + "<br>" +
-          "city : "+city + "<br>"  ,
+          "Phone : "+phone + "<br>" +
+          "Address : "+address + "<br>" +
+          "Position : "+position + "<br>" +
+          "State : "+state + "<br>" +
+          "City : "+city + "<br>"  +
+          "Coverletter : "+coverletter + "<br>"  ,
+
+    // Attachments: [
+    // {
+    //   name: filename,
+    //   path: cv
+    // }]
 	})
 		.then(function (message) {
 		alert("Your Application Submitted Successfully")
@@ -113,7 +125,7 @@
                 <div class="card shadow-lg">
                   <div class="card-body p-5">
                     <div class="p-3">
-                      <form class="row g-3" method="POST">
+                      <form class="row g-3" method="POST" enctype="multipart/form-data">
                         <div class="col-md-12">
                           <label for="inputEmail4" class="form-label">Full Name</label>
                           <input type="text" class="form-control" id="inputEmail4" name="fullname">
@@ -169,9 +181,18 @@
                           <input type="text" class="form-control" id="inputCity" name="state">
                         </div>
                         <!-- <div class="col-md-12">
-                          <label for="formFile" class="form-label">Upload Your CV Here:</label>
-                          <input class="form-control" type="file" id="formFile">
+                          <label for="inputState" class="form-label">Cover Letter</label>
+                          <textarea type="text" class="form-control" id="inputCity" name="coverletter">
                         </div> -->
+
+                        <div class="col-md-6">
+                          <label for="inputState" class="form-label">Cover Letter</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="coverletter"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="formFile" class="form-label">Upload Your CV Here:</label>
+                          <input class="form-control" type="file" id="formFile" name="cv">
+                        </div>
                         
                         
                         <div class="col-12">
