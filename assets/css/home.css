@@ -298,13 +298,13 @@ footer a:hover{
 
 
 .offeringcard:hover .card {
-  border-color: blue;
+  border-color: var(--mycolor-3);
   border-width: medium;
   transition-duration: 700ms;
 }
 
 .offeringcard:hover .card-header {
-  background-color: skyblue;
+  background-color: var(--mycolor-3);
   color: white;
   transition-duration: 700ms;
 

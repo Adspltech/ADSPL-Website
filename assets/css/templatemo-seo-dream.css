@@ -1409,6 +1409,7 @@ Services Style
 
 }
 
+
 /* my changes */
 .service-item:hover h4 {
   color: white;
@@ -1416,6 +1417,11 @@ Services Style
 /* my changes */
 .service-item:hover p{
   color: white;
+}
+/* my changes */
+.service-item:hover .icon-d svg {
+      
+  color: white
 }
 
 
