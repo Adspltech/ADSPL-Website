@@ -263,9 +263,9 @@ footer a:hover{
   text-decoration: none;
 }
 
-#soclinks span svg{
-  width: 5px;
-
+#soclinks a{
+  color: #f5b935;
+  
 }
 
 
@@ -405,13 +405,18 @@ footer a:hover{
 #mainheading{
   background-image: url(../images/gif/3d08e03cb40252526fee2036a67f07f1.gif);
   color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
 
+@media (min-width: 1000px) {
+#mainheading h1{
 
+  font-size: 450%;
+}
+}
 
 
 

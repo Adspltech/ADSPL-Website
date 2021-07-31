@@ -39,11 +39,17 @@
     var city = form.city.value;
     var state = form.state.value;
     var coverletter = form.coverletter.value;
-    var cv = form.cv.value;
-    var filename=cv.replace(/^.*[\\\/]/,'');
+    var cvlink = form.cvlink.value;
+    
+
+
+
+
+    // var cv = form.cv.value;
+    // var filename=cv.replace(/^.*[\\\/]/,'');
     // console.log(typeof(form.cv.path));
-    console.log(cv);
-    console.log(filename);
+    // console.log(cv);
+    // console.log(filename);
     // console.log(form.cv.value);
     // console.log(form.cv.);
 
@@ -53,7 +59,7 @@
     Username: "pratik.testmail123@gmail.com",
 		Password: "Testpass@123",
     
-		To: 'admin@adspltech.net, intern@adspltech.net, p.b.hilale@gmail.com',
+		To: 'admin@adspltech.net, intern@adspltech.net',
 		From: "pratik.testmail123@gmail.com",
 		Subject: "Mail From Careers Form",
 		Body: "Fullname : "+fullname +"<br>" +
@@ -63,7 +69,8 @@
           "Position : "+position + "<br>" +
           "State : "+state + "<br>" +
           "City : "+city + "<br>"  +
-          "Coverletter : "+coverletter + "<br>"  ,
+          "Coverletter : "+coverletter + "<br>"  +
+          "cvlink : "+cvlink + "<br>"  ,
 
     // Attachments: [
     // {
@@ -116,8 +123,8 @@
             </div>
             <div class="row">
 
-              <div class="col-md-4 ">
-                  <img src="assets/images/annie-spratt-vGgn0xLdy8s-unsplash.jpg" alt="" style="width: 100%;">
+              <div class="col-md-4 bg-light">
+                  <!-- <img src="assets/images/annie-spratt-vGgn0xLdy8s-unsplash.jpg" alt="" style="width: 100%;"> -->
               </div>
 
               <div class="col-md-8">
@@ -189,9 +196,14 @@
                           <label for="inputState" class="form-label">Cover Letter</label>
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="coverletter"></textarea>
                         </div>
-                        <div class="col-md-12">
+                        <!-- <div class="col-md-12">
                           <label for="formFile" class="form-label">Upload Your CV Here:</label>
                           <input class="form-control" type="file" id="formFile" name="cv">
+                        </div> -->
+
+                        <div class="col-md-12">
+                          <label for="inputState" class="form-label">Google Drive link of your CV:</label>
+                          <input type="text" class="form-control" id="inputCity" name="cvlink">
                         </div>
                         
                         
