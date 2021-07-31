@@ -263,8 +263,8 @@ footer a:hover{
   text-decoration: none;
 }
 
-#soclinks span{
-  padding: 10px;
+#soclinks span svg{
+  width: 5px;
 
 }
 
