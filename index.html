@@ -406,7 +406,15 @@
 </head>
 
 <body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144083723-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-144083723-2');
+  </script>
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -1448,7 +1456,7 @@
             ////socketUrl: "http://ec2-3-128-226-250.us-east-2.compute.amazonaws.com:5002",
             socketUrl: "https://0fccc1670eb0.ngrok.io",
             //socketPath: "/socket.io/",
-            title: "ADSPL Sara",
+            title: "Sara",
             subtitle: "",
             params: {
               "storage": "session"
