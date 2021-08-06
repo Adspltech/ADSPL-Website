@@ -2,4 +2,4 @@
 deployment:
 	tasks:
 		- export DEPLOYPATH=/home2/adsplbe7/public_html/
-		- /bin/cp index.html $DEPLOYPATH
+		- cp -r /home2/adsplbe7/repositories/ADSPL-Website/  $DEPLOYPATH
