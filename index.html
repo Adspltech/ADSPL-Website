@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-
-
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1x2TCnJdXTQFErgZhxjMUWKIIfIfSbIy-">
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+  <!--<script src="assets/js/chatbot_js.js"></script>-->
 
   <title>ADSPL</title>
 
@@ -36,6 +37,8 @@
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/chatbot.css">
+  <!--<link rel="stylesheet" href="assets/css/chatbot_styes.css">-->
 
 
   <link href="assets/css/animate.min.css" rel="stylesheet">
@@ -1474,8 +1477,20 @@
             ////socketUrl: "http://ec2-3-128-226-250.us-east-2.compute.amazonaws.com:5002",
             socketUrl: "https://0fccc1670eb0.ngrok.io",
             //socketPath: "/socket.io/",
-            title: "Sara",
-            subtitle: "",
+            title: "SARA",
+            subtitle: 'AI powred chatbot',
+            profileAvatar: "../assets/images/adspl.png",
+            openLauncherImage: "../assets/images/chatboticon.png",
+            closeImage: "../assets/images/chatboticon.png",
+            showFullScreenButton:true,
+            showMessageDate:true,
+            inputTextFieldHint: "What's in your mind?...",
+            customMessageDelay: (message) => {
+                let delay = message.length * 40;
+                if (delay > 3 * 1000) delay = 3 * 1000;
+                if (delay < 800) delay = 800;
+                return delay;
+            },
             params: {
               "storage": "session"
             }
@@ -1486,6 +1501,15 @@
       t.insertBefore(e, t.firstChild);
     })();
   </script>
+  
+  <!--<div id="chat-container"></div>
+  <script>
+    createChatBot(host = "https://0fccc1670eb0.ngrok.io/webhooks/rest/webhook",
+      botLogo = "../assets/images/adspl.png",
+      title = "SARA ", welcomeMessage = "Hey, Welcome to ADSPL ",
+      inactiveMsg = "Server is down, Please contact the developer to activate it ",
+      theme = "blue ")
+  </script>-->
 
 
   <div id="footer"></div>
