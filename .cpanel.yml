@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/adsplbe7/public_html/
-    - cp -r * $DEPLOYPATH
+    - export deploypath=/home2/adsplbe7/public_html/
+    - cp -r * $deploypath
