@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export deploypath=/home2/adsplbe7/public_html/
-    - cp -r * $deploypath
+    - cp -r assets/ $deploypath
+    - cp -r vendor/ $deploypath
+    - cp -r index.html $deploypath
+
