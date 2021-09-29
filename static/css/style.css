@@ -5,15 +5,16 @@
     }
     
     .chat-app {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.25;
         font-family: "Roboto", sans-serif;
-        height: 600px;
+        height: 585px;
         width: 370px;
         position: fixed;
         bottom: 32px;
         right: 32px;
         color: #141E30;
+        z-index: 99;
     }
     
     .chat-app .title {
@@ -21,6 +22,7 @@
         font-family: "Raleway", sans-serif;
         font-weight: 600;
         margin: 0;
+        color: #ffffff;
     }
     
     .chat-app .subtitle {
@@ -28,6 +30,7 @@
         font-family: "Raleway", sans-serif;
         font-weight: 500;
         margin: 0;
+        color: #ffffff;
     }
     
     .chat-app:not(.is-active) .chat-app_toggle:hover {
@@ -118,7 +121,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: 1.5em 1.5em;
+        padding: 1em 1.5em;
     }
     
     .chat-app_header .close {
@@ -222,6 +225,39 @@
         width: 100%;
     }
     
+    .chat-app_content .text {
+        /*display: block;
+        margin-block-start: 0.75em;
+        margin-block-end: 0.75em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-size: 15.7px;
+        line-height: 1.25;
+        font-family: "Roboto", sans-serif;
+        font-weight: 550;*/
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.25;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .chat-app_content .textblack {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.25;
+        font-size: 16px;
+        color: black;
+    }
+    
     .chat-app_content .message {
         width: calc(100% - 2em);
         padding: 0 0.75em 0 0.75em;
@@ -237,7 +273,8 @@
         transform: scale(0.8);
         transform-origin: 100% 100%;
         word-break: break-word;
-        ;
+        margin: 0.16px 0px 0px 32px;
+        padding: 0px 12px;
     }
     
     .chat-app_content .message:after {
@@ -275,7 +312,7 @@
         background: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         padding: 1.5em;
-        padding-top: 0.75em;
+        padding-bottom: 0.75em;
         position: relative;
     }
     

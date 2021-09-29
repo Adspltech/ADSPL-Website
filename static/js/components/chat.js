@@ -53,7 +53,7 @@ function setBotResponse(response) {
             const fallbackMsg = "I am facing some issues, please try again later!!!"; // <div class="message reply"><p class="text">${fallbackMsg}</p></div>`;
 
             //const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${fallbackMsg}</p><div class="clearfix"></div>`;
-            const BotResponse = `<div class="message reply"><p class="text">${fallbackMsg}</p></div>`;
+            const BotResponse = `<div class="message reply"><p class="textblack">${fallbackMsg}</p></div>`;
 
             $(BotResponse).appendTo(".messages").hide().fadeIn(1000);
             scrollToBottomOfResults();
@@ -68,8 +68,8 @@ function setBotResponse(response) {
                         let html = converter.makeHtml(response[i].text);
                         html = html.replaceAll("<p>", "").replaceAll("</p>", "").replaceAll("<strong>", "<b>").replaceAll("</strong>", "</b>");
                         html = html.replace(/(?:\r\n|\r|\n)/g, '<br>')
-                        console.log(html);
-                        // check for blockquotes
+                            //////console.log(html);
+                            // check for blockquotes
                         if (html.includes("<blockquote>")) {
                             html = html.replaceAll("<br>", "");
                             botResponse = getBotResponse(html);
@@ -93,7 +93,7 @@ function setBotResponse(response) {
                             // if no markdown formatting found, render the text as it is.
                             if (!botResponse) {
                                 //botResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${response[i].text}</p><div class="clearfix"></div>`;
-                                botResponse = `<div class="message reply"><p class="text">${response[i].text}</p></div>`;
+                                botResponse = `<div class="message reply"><p class="textblack">${response[i].text}</p></div>`;
                             }
                         }
                         // append the bot response on to the chat screen
@@ -227,13 +227,14 @@ function setBotResponse(response) {
  * @param {String} message user message
  */
 function send(message) {
+    ////console.log("message :", message);
     $.ajax({
         url: rasa_server_url,
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({ message, sender: sender_id }),
         success(botResponse, status) {
-            console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
+            //console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
 
             // if user wants to restart the chat and clear the existing chat contents
             if (message.toLowerCase() === "/restart") {
@@ -255,7 +256,7 @@ function send(message) {
 
             // if there is no response from rasa server, set error bot response
             setBotResponse("");
-            console.log("Error from bot end: ", textStatus);
+            //console.log("Error from bot end: ", textStatus);
         },
     });
 }
@@ -267,6 +268,7 @@ function send(message) {
  */
 // eslint-disable-next-line no-unused-vars
 function actionTrigger() {
+    //console.log("Action trigger")
     $.ajax({
         url: `http://localhost:5005/conversations/${sender_id}/execute`,
         type: "POST",
@@ -277,7 +279,7 @@ function actionTrigger() {
             confidence: "0.98",
         }),
         success(botResponse, status) {
-            console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
+            //console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
 
             if (Object.hasOwnProperty.call(botResponse, "messages")) {
                 setBotResponse(botResponse.messages);
@@ -287,7 +289,7 @@ function actionTrigger() {
         error(xhr, textStatus) {
             // if there is no response from rasa server
             setBotResponse("");
-            console.log("Error from bot end: ", textStatus);
+            //console.log("Error from bot end: ", textStatus);
             $("#chat-input").prop("disabled", false);
         },
     });
@@ -304,8 +306,9 @@ function actionTrigger() {
  */
 // eslint-disable-next-line no-unused-vars
 function customActionTrigger() {
+    //console.log("Custon action trigger ")
     $.ajax({
-        url: "http://localhost:5055/webhook/",
+        url: "https://c2ea-3-128-226-250.ngrok.io/webhooks/rest/webhook",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
@@ -315,7 +318,7 @@ function customActionTrigger() {
             },
         }),
         success(botResponse, status) {
-            console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
+            //console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
 
             if (Object.hasOwnProperty.call(botResponse, "responses")) {
                 setBotResponse(botResponse.responses);
@@ -325,10 +328,11 @@ function customActionTrigger() {
         error(xhr, textStatus) {
             // if there is no response from rasa server
             setBotResponse("");
-            console.log("Error from bot end: ", textStatus);
+            //console.log("Error from bot end: ", textStatus);
             $("#chat-input").prop("disabled", false);
         },
     });
+    send("Hi");
 }
 
 
