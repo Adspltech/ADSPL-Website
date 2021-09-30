@@ -17,7 +17,7 @@ function setUserResponse(message) {
     //const user_response = `<img class="userAvatar" src='./static/img/userAvatar.jpg'><p class="userMsg">${message} </p><div class="clearfix"></div>`;
     //const user_response = `<p class="message">${message} </p><div class="text"></div>`;
 
-    const user_response = `<div class="message"><p class="text">${message}</p></div>`;
+    const user_response = `<div class="message"><p class="text">${message}</p></div><div class="clearfix"></div>`;
     $(user_response).appendTo(".messages").show("slow");
 
     $(".chat-input").val("");
@@ -34,7 +34,7 @@ function setUserResponse(message) {
  */
 function getBotResponse(text) {
     //botResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><span class="botMsg">${text}</span><div class="clearfix"></div>`;
-    botResponse = `<div class="message reply"><p class="text">${text}</p></div>`;
+    botResponse = `<div class="message reply"><p class="text">${text}</p></div><div class="clearfix"></div>`;
     return botResponse;
 }
 
@@ -53,7 +53,7 @@ function setBotResponse(response) {
             const fallbackMsg = "I am facing some issues, please try again later!!!"; // <div class="message reply"><p class="text">${fallbackMsg}</p></div>`;
 
             //const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${fallbackMsg}</p><div class="clearfix"></div>`;
-            const BotResponse = `<div class="message reply"><p class="textblack">${fallbackMsg}</p></div>`;
+            const BotResponse = `<div class="message reply"><p class="textblack">${fallbackMsg}</p></div><div class="clearfix"></div>`;
 
             $(BotResponse).appendTo(".messages").hide().fadeIn(1000);
             scrollToBottomOfResults();
@@ -93,7 +93,7 @@ function setBotResponse(response) {
                             // if no markdown formatting found, render the text as it is.
                             if (!botResponse) {
                                 //botResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${response[i].text}</p><div class="clearfix"></div>`;
-                                botResponse = `<div class="message reply"><p class="textblack">${response[i].text}</p></div>`;
+                                botResponse = `<div class="message reply"><p class="textblack">${response[i].text}</p></div><div class="clearfix"></div>`;
                             }
                         }
                         // append the bot response on to the chat screen
@@ -104,7 +104,7 @@ function setBotResponse(response) {
                 // check if the response contains "images"
                 if (Object.hasOwnProperty.call(response[i], "image")) {
                     if (response[i].image !== null) {
-                        const BotResponse = `<div class="singleCard"><img class="imgcard" src="${response[i].image}"></div><div class="clearfix">`;
+                        const BotResponse = `<div class="singleCard"><img class="imgcard" src="${response[i].image}"></div><div class="clearfix"></div>`;
                         $(BotResponse).appendTo(".messages").hide().fadeIn(1000);
                     }
                 }
