@@ -8,15 +8,13 @@
         font-size: 16px;
         line-height: 1.25;
         font-family: "Roboto", sans-serif;
-        height: 585px;
-        width: 370px;
-        /* height: 64px;
-        width: 64px; */
+        height: 64px;
+        width: 64px;
         position: fixed;
         bottom: 32px;
         right: 32px;
         color: #141E30;
-        /* z-index: 99; */
+        z-index: 99;
     }
 
    .chat-app:onclick {
@@ -65,7 +63,7 @@
     }
     
     .chat-app_toggle .icon {
-        z-index: 2;
+        z-index: 99;
         color: white;
         font-size: 1.5em;
         position: absolute;
@@ -111,8 +109,12 @@
         border-radius: 16px 16px 40px 16px;
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        position: relative;
-        height: 600px;
+        /* position: relative; */
+        position: fixed;
+        height: 585px;
+        width: 370px;
+        bottom: 32px;
+        right: 32px;
         display: flex;
         flex-direction: column;
         background: white;
@@ -328,7 +330,7 @@
         background: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         padding: 1.5em;
-        padding-bottom: 0.75em;
+        padding-bottom: 0.25em;
         position: relative;
     }
     
@@ -460,7 +462,7 @@
         visibility: visible;
         pointer-events: unset;
         transform: none;
-        z-index: 99;
+        /* z-index: 99; */
     }
     
     .chat-app.is-active .chat-app_header .avatar,
