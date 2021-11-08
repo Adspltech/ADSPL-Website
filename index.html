@@ -49,6 +49,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:500:600|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
+    <!-- Cookies-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144083723-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -1428,6 +1432,25 @@
                     alert("Message Sent Successfully")
                 });
         }
+    </script>
+    <!--Cookies script-->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#000"
+                },
+                "button": {
+                    "background": "#f1d600"
+                }
+            },
+            "showLink": false,
+            "theme": "classic",
+            "position": "top",
+            "static": true,
+            "type": "opt-in"
+        });
     </script>
 
     <!-- Scripts -->
