@@ -1,4 +1,5 @@
 function chatInit(selector) {
+    console.log("chatInit");
     document.addEventListener('DOMContentLoaded', () => {
         if (!window.LIVE_CHAT_UI) {
             let chat = document.querySelector(selector);

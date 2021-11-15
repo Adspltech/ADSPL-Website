@@ -22,7 +22,7 @@ function addSuggestion(suggestions) {
 }
 
 
-// on click of suggestion's button, get the title value and send it to rasa
+// on click of suggestion's button, get the title value and send it to adspl
 $(document).on("click", ".menu .menuChips", function() {
     const text = this.innerText;
     const payload = this.getAttribute("data-payload");

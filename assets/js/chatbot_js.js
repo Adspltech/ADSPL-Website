@@ -1,5 +1,5 @@
 /*
-Makes backend API call to rasa chatbot and display output to chatbot frontend
+Makes backend API call to adspl chatbot and display output to chatbot frontend
 */
 
 function init(botLogoPath) {
@@ -75,7 +75,7 @@ function init(botLogoPath) {
     //------------------------ ChatBot Toggler -------------------------
 
     chatBtn.addEventListener("click", () => {
-
+        
         mobileDevice = !detectMob()
         if (chatPopup.style.display == "none" && mobileDevice) {
             chatPopup.style.display = "flex"
@@ -98,7 +98,7 @@ function init(botLogoPath) {
     })
 
     expandWindow.addEventListener("click", (e) => {
-        // console.log(expandWindow.innerHTML)
+        console.log("expandWindow.innerHTML")
         if (expandWindow.innerHTML == '<img src="../assets/images/chatboticon.png" class="material-icon">') {
             expandWindow.innerHTML = `<img src = "../assets/images/chatboticon.png" class = 'material-icon'>`
             root.style.setProperty('--chat-window-height', 80 + "%");
@@ -165,7 +165,7 @@ function send(message) {
             if (data != null) {
                 setBotResponse(data);
             }
-            console.log("Rasa Response: ", data, "\n Status:", textStatus)
+            console.log("adspl Response: ", data, "\n Status:", textStatus)
         },
         error: function (errorMessage) {
             setBotResponse("");
@@ -181,7 +181,7 @@ function send(message) {
 function setBotResponse(val) {
     setTimeout(function () {
         if (val.length < 1) {
-            //if there is no response from Rasa
+            //if there is no response from adspl
             // msg = 'I couldn\'t get that. Let\' try something else!';
             msg = inactiveMessage;
 
@@ -191,7 +191,7 @@ function setBotResponse(val) {
             chatInput.focus();
 
         } else {
-            //if we get response from Rasa
+            //if we get response from adspl
             for (i = 0; i < val.length; i++) {
                 //check if there is text message
                 if (val[i].hasOwnProperty("text")) {

@@ -41,7 +41,7 @@ function showQuickReplies(quickRepliesData) {
     });
 }
 
-// on click of quickreplies, get the payload value and send it to rasa
+// on click of quickreplies, get the payload value and send it to adspl
 $(document).on("click", ".quickReplies .chip", function() {
     const text = this.innerText;
     const payload = this.getAttribute("data-payload");

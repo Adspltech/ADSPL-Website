@@ -1,5 +1,5 @@
 /**
- *  sends the user location to rasa
+ *  sends the user location to adspl
  * @param {Object} position json object
  */
 function getUserPosition(position) {

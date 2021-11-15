@@ -42,14 +42,13 @@ function getBotResponse(text) {
  * renders bot response on to the chat screen
  * @param {Array} response json array containing different types of bot response
  *
- * for more info: `https://rasa.com/docs/rasa/connectors/your-own-website#request-and-response-format`
  */
 function setBotResponse(response) {
     // renders bot response after 500 milliseconds
     setTimeout(() => {
         hideBotTyping();
         if (response.length < 1) {
-            // if there is no response from Rasa, send  fallback message to the user
+            // if there is no response from adspl, send  fallback message to the user
             const fallbackMsg = "I am facing some issues, please try again later!!!"; // <div class="message reply"><p class="text">${fallbackMsg}</p></div>`;
 
             //const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${fallbackMsg}</p><div class="clearfix"></div>`;
@@ -58,7 +57,7 @@ function setBotResponse(response) {
             $(BotResponse).appendTo(".messages").hide().fadeIn(1000);
             scrollToBottomOfResults();
         } else {
-            // if we get response from Rasa
+            // if we get response from adspl
             for (let i = 0; i < response.length; i += 1) {
                 // check if the response contains "text"
                 if (Object.hasOwnProperty.call(response[i], "text")) {
@@ -223,18 +222,18 @@ function setBotResponse(response) {
 }
 
 /**
- * sends the user message to the rasa server,
+ * sends the user message to the adspl server,
  * @param {String} message user message
  */
 function send(message) {
     ////console.log("message :", message);
     $.ajax({
-        url: rasa_server_url,
+        url: adspl_server_url,
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({ message, sender: sender_id }),
         success(botResponse, status) {
-            //console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
+            //console.log("Response from adspl: ", botResponse, "\nStatus: ", status);
 
             // if user wants to restart the chat and clear the existing chat contents
             if (message.toLowerCase() === "/restart") {
@@ -254,7 +253,7 @@ function send(message) {
                 // return;
             }
 
-            // if there is no response from rasa server, set error bot response
+            // if there is no response from adspl server, set error bot response
             setBotResponse("");
             //console.log("Error from bot end: ", textStatus);
         },
@@ -264,7 +263,7 @@ function send(message) {
  * sends an event to the bot,
  *  so that bot can start the conversation by greeting the user
  *
- * `Note: this method will only work in Rasa 1.x`
+ * `Note: this method will only work in adspl 1.x`
  */
 // eslint-disable-next-line no-unused-vars
 function actionTrigger() {
@@ -279,7 +278,7 @@ function actionTrigger() {
             confidence: "0.98",
         }),
         success(botResponse, status) {
-            //console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
+            //console.log("Response from adspl: ", botResponse, "\nStatus: ", status);
 
             if (Object.hasOwnProperty.call(botResponse, "messages")) {
                 setBotResponse(botResponse.messages);
@@ -287,7 +286,7 @@ function actionTrigger() {
             $("#chat-input").prop("disabled", false);
         },
         error(xhr, textStatus) {
-            // if there is no response from rasa server
+            // if there is no response from adspl server
             setBotResponse("");
             //console.log("Error from bot end: ", textStatus);
             $("#chat-input").prop("disabled", false);
@@ -300,9 +299,9 @@ function actionTrigger() {
  *  so that bot can start the conversation by greeting the user
  *
  * Make sure you run action server using the command
- * `rasa run actions --cors "*"`
+ * `adspl run actions --cors "*"`
  *
- * `Note: this method will only work in Rasa 2.x`
+ * `Note: this method will only work in adspl 2.x`
  */
 // eslint-disable-next-line no-unused-vars
 function customActionTrigger() {
@@ -318,7 +317,7 @@ function customActionTrigger() {
             },
         }),
         success(botResponse, status) {
-            //console.log("Response from Rasa: ", botResponse, "\nStatus: ", status);
+            //console.log("Response from adspl: ", botResponse, "\nStatus: ", status);
 
             if (Object.hasOwnProperty.call(botResponse, "responses")) {
                 setBotResponse(botResponse.responses);
@@ -326,7 +325,7 @@ function customActionTrigger() {
             $("#chat-input").prop("disabled", false);
         },
         error(xhr, textStatus) {
-            // if there is no response from rasa server
+            // if there is no response from adspl server
             setBotResponse("");
             //console.log("Error from bot end: ", textStatus);
             $("#chat-input").prop("disabled", false);
@@ -339,7 +338,7 @@ function customActionTrigger() {
 
 /**
  * clears the conversation from the chat screen
- * & sends the `/resart` event to the Rasa server
+ * & sends the `/resart` event to the adspl server
  */
 function restartConversation() {
     $("#chat-input").prop("disabled", true);
