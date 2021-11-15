@@ -537,16 +537,16 @@
                   <div class="plan">
                     <header>
                       <div id="up_offer" class="pricing-table__item--offer" dataoffer="Save 10%"></div>
-                      <h4 class="plan-title">Ultra Premium</h4>
-                      <div class="plan-cost"><span id="priceplan_ultrapremium" class="plan-price">Rs. 14490</span><span
+                      <h4 class="plan-title">Custom Enterprise</h4>
+                      <!-- <div class="plan-cost"><span id="priceplan_ultrapremium" class="plan-price">Rs. 14490</span><span
                           class="plan-type">/month</span></div>
-                    </header>
+                    </header> -->
                     <ul class="plan-features">
-                      <li><i class="ion-android-remove"> </i>Everything in Premium +</li>
+                      <!-- <li><i class="ion-android-remove"> </i>Everything in Premium +</li>
                       <li><i class="ion-android-remove"> </i>Unlimited Chats</li>
                       <li><i class="ion-android-remove"> </i>Unlimited Chat storage</li>
                       <li><i class="ion-android-remove"> </i>Whatsapp Integration</li>
-                      <li><i class="ion-android-remove"> </i>Live chat to agent</li>
+                      <li><i class="ion-android-remove"> </i>Live chat to agent</li> -->
                     </ul>
                     <div class="plan-select"><a href="">Select Plan</a></div>
                   </div>
@@ -573,35 +573,35 @@
         document.getElementById("lite_offer").style.visibility = "visible";
         document.getElementById("standard_offer").style.visibility = "visible";
         document.getElementById("premium_offer").style.visibility = "visible";
-        document.getElementById("up_offer").style.visibility = "visible";
+        //document.getElementById("up_offer").style.visibility = "visible";
         document.getElementById("lite_offer").setAttribute("dataoffer", price);
         document.getElementById("standard_offer").setAttribute("dataoffer", price);
         document.getElementById("premium_offer").setAttribute("dataoffer", price);
-        document.getElementById("up_offer").setAttribute("dataoffer", price);
+        //document.getElementById("up_offer").setAttribute("dataoffer", price);
       }
       else {
         document.getElementById("lite_offer").style.visibility = "hidden";
         document.getElementById("standard_offer").style.visibility = "hidden";
         document.getElementById("premium_offer").style.visibility = "hidden";
-        document.getElementById("up_offer").style.visibility = "hidden";
+        //document.getElementById("up_offer").style.visibility = "hidden";
       }
       if (plan_type == 'monthly') {
         document.getElementById("priceplan_lite").innerHTML = "Rs. 3200";
         document.getElementById("priceplan_standard").innerHTML = " Rs. 4025";
         document.getElementById("priceplan_premium").innerHTML = "Rs. 6900";
-        document.getElementById("priceplan_ultrapremium").innerHTML = "Rs. 16100";
+        //document.getElementById("priceplan_ultrapremium").innerHTML = "Rs. 16100";
       }
       else if (plan_type == "semi_anually") {
         document.getElementById("priceplan_lite").innerHTML = "Rs. 2898";
         document.getElementById("priceplan_standard").innerHTML = "Rs. 3623";
         document.getElementById("priceplan_premium").innerHTML = "Rs. 6210";
-        document.getElementById("priceplan_ultrapremium").innerHTML = "Rs. 14490";
+        //document.getElementById("priceplan_ultrapremium").innerHTML = "Rs. 14490";
       }
       else if (plan_type == "yearly") {
         document.getElementById("priceplan_lite").innerHTML = "Rs. 2318";
         document.getElementById("priceplan_standard").innerHTML = "Rs. 2898";
         document.getElementById("priceplan_premium").innerHTML = "Rs.5520";
-        document.getElementById("priceplan_ultrapremium").innerHTML = "Rs. 11592";
+        //document.getElementById("priceplan_ultrapremium").innerHTML = "Rs. 11592";
       }
 
     }
