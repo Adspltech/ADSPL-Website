@@ -402,7 +402,7 @@
     
     .chat-input {
         height: 2.5em;
-        width: 100%;
+        width: 80%;
         border: none;
         background: #ededed;
         border: solid 1px #a0a0a0;
@@ -410,8 +410,14 @@
         padding: 1em 1em;
         font-size: 0.9em;
         transition: all 0.3s;
+        vertical-align:right;
     }
-    
+    .chat-input-mic {
+        height: 50px;
+        width: 50px;
+        vertical-align:middle;
+        cursor: pointer;
+    }
     .chat-input:focus {
         outline: none;
         box-shadow: 0 10px 20px rgba(0, 205, 172, 0.4);

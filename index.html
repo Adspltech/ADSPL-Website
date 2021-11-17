@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
 
     <title>ADSPL</title>
@@ -25,11 +26,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
     <script>
-        $(function() {
+        $(function () {
             $("#menu").load("menu.html");
             $("#footer").load("footer.html");
         });
@@ -57,46 +60,47 @@
             width: 100%;
             height: 219px;
         }
-        
+
         @media (max-width: 768px) {
             .portimg {
                 width: 100%;
                 height: 155px;
             }
         }
+
         /* #footercontainer {
       color: white;
     } */
-        
+
         #footercontainer a {
             color: white;
         }
-        
+
         .foohead {
             color: white;
         }
-        
+
         .footer-subheading {
             color: var(--mycolor-2);
             font-weight: bolder;
         }
-        
+
         body {
             /* font-family: "Open Sans", sans-serif; */
             font-family: 'Source Sans Pro', sans-serif;
             color: #444444;
         }
-        
+
         a {
             color: #1f130b;
             text-decoration: none;
         }
-        
+
         a:hover {
             color: #fc8129;
             text-decoration: none;
         }
-        
+
         h1,
         h2,
         h3,
@@ -106,14 +110,15 @@
             /* font-family: "Raleway", sans-serif; */
             font-family: 'Source Sans Pro', sans-serif;
         }
-        
+
         #hero p {
             text-align: center;
         }
+
         /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-        
+
         #hero {
             width: 100%;
             overflow: hidden;
@@ -124,7 +129,7 @@
             padding: 0;
             height: 100%;
         }
-        
+
         #hero .carousel-container {
             display: flex;
             justify-content: center;
@@ -135,7 +140,7 @@
             height: 70vh;
             padding-top: 60px;
         }
-        
+
         #hero h2 {
             /* color: #fff; */
             color: black;
@@ -143,7 +148,7 @@
             font-size: 48px;
             font-weight: 700;
         }
-        
+
         #hero p {
             width: 80%;
             -webkit-animation-delay: 0.4s;
@@ -152,12 +157,12 @@
             /* color: #fff; */
             color: black;
         }
-        
+
         #hero .carousel-control-prev,
         #hero .carousel-control-next {
             width: 10%;
         }
-        
+
         #hero .carousel-control-next-icon,
         #hero .carousel-control-prev-icon {
             background: none;
@@ -166,7 +171,7 @@
             width: auto;
             height: auto;
         }
-        
+
         #hero .btn-get-started {
             font-family: "Raleway", sans-serif;
             font-weight: 500;
@@ -184,126 +189,135 @@
             animation-delay: 0.8s;
             border: 2px solid #ef6603;
         }
-        
+
         #hero .btn-get-started:hover {
             background: #ef6603;
             color: #fff;
             text-decoration: none;
         }
-        
+
         @media (min-width: 1024px) {
             #hero p {
                 width: 60%;
             }
+
             #hero .carousel-control-prev,
             #hero .carousel-control-next {
                 width: 5%;
             }
         }
-        
+
         @media (max-width: 768px) {
             #hero .carousel-container {
                 height: 90vh;
             }
+
             #hero h2 {
                 font-size: 28px;
             }
         }
-        
+
         .hero-waves {
             display: block;
             width: 100%;
             height: 60px;
             position: relative;
         }
-        
+
         .wave1 use {
             -webkit-animation: move-forever1 10s linear infinite;
             animation: move-forever1 10s linear infinite;
             -webkit-animation-delay: -2s;
             animation-delay: -2s;
         }
-        
+
         .wave2 use {
             -webkit-animation: move-forever2 8s linear infinite;
             animation: move-forever2 8s linear infinite;
             -webkit-animation-delay: -2s;
             animation-delay: -2s;
         }
-        
+
         .wave3 use {
             -webkit-animation: move-forever3 6s linear infinite;
             animation: move-forever3 6s linear infinite;
             -webkit-animation-delay: -2s;
             animation-delay: -2s;
         }
-        
+
         @-webkit-keyframes move-forever1 {
             0% {
                 transform: translate(85px, 0%);
             }
+
             100% {
                 transform: translate(-90px, 0%);
             }
         }
-        
+
         @keyframes move-forever1 {
             0% {
                 transform: translate(85px, 0%);
             }
+
             100% {
                 transform: translate(-90px, 0%);
             }
         }
-        
+
         @-webkit-keyframes move-forever2 {
             0% {
                 transform: translate(-90px, 0%);
             }
+
             100% {
                 transform: translate(85px, 0%);
             }
         }
-        
+
         @keyframes move-forever2 {
             0% {
                 transform: translate(-90px, 0%);
             }
+
             100% {
                 transform: translate(85px, 0%);
             }
         }
-        
+
         @-webkit-keyframes move-forever3 {
             0% {
                 transform: translate(-90px, 0%);
             }
+
             100% {
                 transform: translate(85px, 0%);
             }
         }
-        
+
         @keyframes move-forever3 {
             0% {
                 transform: translate(-90px, 0%);
             }
+
             100% {
                 transform: translate(85px, 0%);
             }
         }
+
         /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-        
+
         section {
             padding: 60px 0;
             overflow: hidden;
         }
-        
+
         .section-title {
             padding-bottom: 40px;
         }
-        
+
         .section-title h2 {
             font-size: 14px;
             font-weight: 500;
@@ -315,7 +329,7 @@
             color: #aaaaaa;
             font-family: "Poppins", sans-serif;
         }
-        
+
         .section-title h2::after {
             content: "";
             width: 120px;
@@ -324,7 +338,7 @@
             background: #fd9042;
             margin: 4px 10px;
         }
-        
+
         .section-title p {
             margin: 0;
             margin: 0;
@@ -334,23 +348,24 @@
             font-family: "Poppins", sans-serif;
             color: #2a2c39;
         }
-        
+
         #maintagline {
             height: 500px;
             width: 100%;
         }
-        
+
         #carouselMainProducts {
             height: 500px;
             width: 100%;
         }
+
         /* .embed-twitter {
       background-color: lightblue;
       width: 70%;
       height: 500px;
       overflow: scroll;
     } */
-        
+
         .embed-twitter {
             background-color: lightblue;
             /* width: 500px; */
@@ -358,21 +373,22 @@
             height: 500px;
             overflow: scroll;
         }
-        
+
         .embed-facebook iframe {
             width: 100%;
         }
-        
+
         .icon-d svg {
             /* width:80%; */
             width: 63px;
             color: var(--mycolor-3);
         }
-        
+
         @media (max-width: 767px) {
             .icon-d {
                 margin-bottom: 20px;
             }
+
             /* .custom-button-new{
       display: flex;
       width: fit-content;
@@ -420,9 +436,10 @@
                         <div class="align-self-center">
 
                             <h2 class="animate__animated animate__fadeInDown"><span>Think Creative</span> <span>Think
-                  Innovative</span> <span>Think Digital</span></h2>
+                                    Innovative</span> <span>Think Digital</span></h2>
                             <p class="animate__animated fanimate__adeInUp">achieve digital transformation with us...</p>
-                            <a href="company.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                            <a href="company.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
 
                         </div>
                     </div>
@@ -432,11 +449,15 @@
                 <div class="carousel-item" data-bs-interval="6000">
                     <div class="row p-0 text-center w-100" id="maintagline">
                         <div class="align-self-center">
-                            <h2 class="animate__animated animate__fadeInDown">Enjoy the Experience of Life in the Future</h2>
-                            <p class="animate__animated fanimate__adeInUp">a series of “Intelli+Save” products for your Smart Home</p>
-                            <a href="Product-SmartDevices.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-                            <a href="contacts.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
-                Demo</a>
+                            <h2 class="animate__animated animate__fadeInDown">Enjoy the Experience of Life in the Future
+                            </h2>
+                            <p class="animate__animated fanimate__adeInUp">a series of “Intelli+Save” products for your
+                                Smart Home</p>
+                            <a href="Product-SmartDevices.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                            <a href="contacts.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
+                                Demo</a>
 
 
                         </div>
@@ -448,10 +469,13 @@
                         <div class="align-self-center">
 
                             <h2 class="animate__animated animate__fadeInDown">Agri IoT Products</h2>
-                            <p class="animate__animated fanimate__adeInUp">a smart IOT device that can assist the farmers in farming in various stages of the crop</p>
-                            <a href="portfolio.html#Agri-IoT-Products" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-                            <a href="contacts.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
-                Demo</a>
+                            <p class="animate__animated fanimate__adeInUp">a smart IOT device that can assist the
+                                farmers in farming in various stages of the crop</p>
+                            <a href="portfolio.html#Agri-IoT-Products"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                            <a href="contacts.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
+                                Demo</a>
 
 
 
@@ -464,12 +488,16 @@
 
                     <div class="row p-0 text-center w-100" id="maintagline">
                         <div class="align-self-center">
-                            <h2 class="animate__animated animate__fadeInDown">Go beyond chatbots with Conversational AI!</h2>
-                            <p class="animate__animated fanimate__adeInUp">make machines capable of understanding, processing and responding to human language.</p>
-                            <a href="Product-Chatbot.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                More</a>
-                            <a href="contacts.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
-                Demo</a>
+                            <h2 class="animate__animated animate__fadeInDown">Go beyond chatbots with Conversational AI!
+                            </h2>
+                            <p class="animate__animated fanimate__adeInUp">make machines capable of understanding,
+                                processing and responding to human language.</p>
+                            <a href="Product-Chatbot.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                                More</a>
+                            <a href="contacts.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
+                                Demo</a>
 
 
                         </div>
@@ -481,12 +509,16 @@
                     <div class="row p-0 text-center w-100" id="maintagline">
                         <div class="align-self-center">
 
-                            <h2 class="animate__animated animate__fadeInDown">Right Time, Right Inventory, Maximum Profits</h2>
-                            <p class="animate__animated fanimate__adeInUp">Inventory and Sales Prediction Software - MaxSales</p>
-                            <a href="Product-Inventory.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                More</a>
-                            <a href="contacts.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
-                Demo</a>
+                            <h2 class="animate__animated animate__fadeInDown">Right Time, Right Inventory, Maximum
+                                Profits</h2>
+                            <p class="animate__animated fanimate__adeInUp">Inventory and Sales Prediction Software -
+                                MaxSales</p>
+                            <a href="Product-Inventory.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                                More</a>
+                            <a href="contacts.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
+                                Demo</a>
 
                         </div>
                     </div>
@@ -498,11 +530,14 @@
                         <div class="align-self-center">
 
                             <h2 class="animate__animated animate__fadeInDown">Facial Recognition Attendance System</h2>
-                            <p class="animate__animated fanimate__adeInUp">a contactless way to manage visitors and employees in an organization
+                            <p class="animate__animated fanimate__adeInUp">a contactless way to manage visitors and
+                                employees in an organization
                             </p>
-                            <a href="Product-FaceRecognition.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-                            <a href="contacts.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
-                Demo</a>
+                            <a href="Product-FaceRecognition.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                            <a href="contacts.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
+                                Demo</a>
 
                         </div>
                     </div>
@@ -514,24 +549,29 @@
                         <div class="align-self-center">
 
                             <h2 class="animate__animated animate__fadeInDown">Minutes of Meeting</h2>
-                            <p class="animate__animated fanimate__adeInUp">automated minutes of meetings for you which are powered by AI and NLP</p>
-                            <a href="Product-Meeting.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                More</a>
-                            <a href="contacts.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
-                Demo</a>
+                            <p class="animate__animated fanimate__adeInUp">automated minutes of meetings for you which
+                                are powered by AI and NLP</p>
+                            <a href="Product-Meeting.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                                More</a>
+                            <a href="contacts.html"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Request
+                                Demo</a>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainProducts" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselMainProducts" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainProducts"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMainProducts"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
 
@@ -545,20 +585,21 @@
 
 
 
-        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
-        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-      </defs>
-      <g class="wave1">
-        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-      </g>
-      <g class="wave2">
-        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-      </g>
-    </svg>
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+            </defs>
+            <g class="wave1">
+                <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+            </g>
+            <g class="wave2">
+                <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+            </g>
+            <g class="wave3">
+                <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+            </g>
+        </svg>
 
     </section>
     <!-- End Hero -->
@@ -571,7 +612,8 @@
                     <div class="features-content">
                         <div class="row">
                             <div class="col-lg-3">
-                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="0s">
                                     <div class="first-number number">
                                         <h6>01</h6>
                                     </div>
@@ -582,7 +624,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="0.2s">
                                     <div class="second-number number">
                                         <h6>02</h6>
                                     </div>
@@ -593,7 +636,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="0.4s">
                                     <div class="third-number number">
                                         <h6>03</h6>
                                     </div>
@@ -604,7 +648,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="features-item second-feature last-features-item wow fadeInUp"
+                                    data-wow-duration="1s" data-wow-delay="0.6s">
                                     <div class="fourth-number number">
                                         <h6>04</h6>
                                     </div>
@@ -624,10 +669,10 @@
                                 <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                                     <div class="progress" data-percentage="100">
                                         <span class="progress-left">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <span class="progress-right">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <div class="progress-value">
                                             <div>
@@ -642,10 +687,10 @@
                                 <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
                                     <div class="progress" data-percentage="100">
                                         <span class="progress-left">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <span class="progress-right">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <div class="progress-value">
                                             <div>
@@ -660,10 +705,10 @@
                                 <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                                     <div class="progress" data-percentage="100">
                                         <span class="progress-left">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <span class="progress-right">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <div class="progress-value">
                                             <div>
@@ -675,13 +720,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="skill-item last-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="skill-item last-skill-item wow fadeIn" data-wow-duration="1s"
+                                    data-wow-delay="0.6s">
                                     <div class="progress" data-percentage="100">
                                         <span class="progress-left">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <span class="progress-right">
-                      <span class="progress-bar"></span>
+                                            <span class="progress-bar"></span>
                                         </span>
                                         <div class="progress-value">
                                             <div>
@@ -706,36 +752,39 @@
                 <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="section-heading">
                         <h6>Data Science +IOT+ Innovation= ADSPL Tech</h6>
-                        <h1> <b>Data Science, <span class="heading-highlight" style="color: var(--mycolor-3);">AI & IOT</span></b>
+                        <h1> <b>Data Science, <span class="heading-highlight" style="color: var(--mycolor-3);">AI &
+                                    IOT</span></b>
                         </h1>
                     </div>
-                    <p>ADSPL Tech helps your businesses with analytical overview based on your past and historical data to achieve digital transformation with Data Science solutions, our team of data scientist will help your business to accelerate and bring
+                    <p>ADSPL Tech helps your businesses with analytical overview based on your past and historical data
+                        to achieve digital transformation with Data Science solutions, our team of data scientist will
+                        help your business to accelerate and bring
                         out new outcomes in future.
-
-
-                        <br> We all know Data science is continually evolving analyzing massive amounts of data with data mining, data cleaning, data structuring and data visualization. With data science and predictive analytics one can predict useful
-                        metrics and trends for the business. ADSPL Team will help you improve your ability to serve your customers & compete in the market.
-
+                        <br> We all know Data science is continually evolving analyzing massive amounts of data with
+                        data mining, data cleaning, data structuring and data visualization. With data science and
+                        predictive analytics one can predict useful
+                        metrics and trends for the business. ADSPL Team will help you improve your ability to serve your
+                        customers & compete in the market.
                     </p>
-
-
-
-
                     <div id="collapse" style="display:none">
                         <p>
-                            We uncover helpful intelligence for your organizations & master the total spectrum of the info science life cycle, each step possesses a tier of flexibility and understanding to maximize returns at every part of analytical process.
-                            <br> ADSPL is the Top Data Science and development agency in India that provides a team of experts who have high technological skills in building business Intelligence which provides you with excellent cross-selling opportunities.
-                            We help you to formulate a strategy that is perfect for your business to process results in better cross-selling tactics.
-                            <br> For us Customer's satisfaction is utmost, and we are committed to provide best services and quality with our dedicated teams to cover specific technical needs or create entire products from scratch. ADSPL Tech provides
-                            holistic data science solutions, AI solutions & IOT solutions to help enterprises power their customers, employees, and partners through multiple channels.
+                            We uncover helpful intelligence for your organizations & master the total spectrum of the
+                            info science life cycle, each step possesses a tier of flexibility and understanding to
+                            maximize returns at every part of analytical process.
+                            <br> ADSPL is the Top Data Science and development agency in India that provides a team of
+                            experts who have high technological skills in building business Intelligence which provides
+                            you with excellent cross-selling opportunities.
+                            We help you to formulate a strategy that is perfect for your business to process results in
+                            better cross-selling tactics.
+                            <br> For us Customer's satisfaction is utmost, and we are committed to provide best services
+                            and quality with our dedicated teams to cover specific technical needs or create entire
+                            products from scratch. ADSPL Tech provides
+                            holistic data science solutions, AI solutions & IOT solutions to help enterprises power
+                            their customers, employees, and partners through multiple channels.
                         </p>
                     </div>
                     <a href="#collapse" class="readmorebutton ps-3">Read More...</a>
-
-
-
                 </div>
-
                 <div class="col-lg-6">
                     <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                         <!--<img src="assets/images/web_developing.gif" alt="">-->
@@ -745,19 +794,14 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
     <div id="services" class="our-services section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <h6>Our Services</h6>
-                        <h2>Discover <span class="heading-highlight" style="color: var(--mycolor-3);">What We Do</span> &amp; Offer To Our Clients</h2>
+                        <h2>Discover <span class="heading-highlight" style="color: var(--mycolor-3);">What We Do</span>
+                            &amp; Offer To Our Clients</h2>
                     </div>
                 </div>
             </div>
@@ -771,10 +815,11 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-01.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
-                      <path
-                        d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cpu"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -794,10 +839,11 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-02.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
-                      <path
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-globe2"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -817,10 +863,11 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-03.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-phone-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -840,10 +887,11 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-03.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mouse2-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M7.5.026C4.958.286 3 2.515 3 5.188V5.5h4.5V.026zm1 0V5.5H13v-.312C13 2.515 11.042.286 8.5.026zM13 6.5H3v4.313C3 13.658 5.22 16 8 16s5-2.342 5-5.188V6.5z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-mouse2-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M7.5.026C4.958.286 3 2.515 3 5.188V5.5h4.5V.026zm1 0V5.5H13v-.312C13 2.515 11.042.286 8.5.026zM13 6.5H3v4.313C3 13.658 5.22 16 8 16s5-2.342 5-5.188V6.5z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -863,12 +911,13 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-01.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-                      <path
-                        d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
-                      <path
-                        d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-stack"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
+                                            <path
+                                                d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -888,10 +937,11 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-02.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd"
-                        d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-sliders" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -911,12 +961,14 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-02.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                      <path fill-rule="evenodd"
-                        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
-                      <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-people-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            <path fill-rule="evenodd"
+                                                d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -936,10 +988,11 @@
                                 <div class="col-lg-4">
                                     <div class="icon-d">
                                         <!-- <img src="assets/images/service-icon-02.png" alt=""> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16">
-                      <path
-                        d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
-                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-recycle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -968,7 +1021,8 @@
                 <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="section-heading">
                         <h6>About Us</h6>
-                        <h2>Top <span class="heading-highlight" style="color: var(--mycolor-3);">IoT and AI</span> development agency
+                        <h2>Top <span class="heading-highlight" style="color: var(--mycolor-3);">IoT and AI</span>
+                            development agency
                         </h2>
                     </div>
                     <div class="row">
@@ -997,7 +1051,9 @@
                             </div>
                         </div>
                     </div>
-                    <p><a rel="nofollow" href="#" target="_parent">ADSPL</a> is the Best IoT and AI development agency in India that provides a team of experts who have high technological skills in building enterprise-class cloud-based software for the Internet
+                    <p><a rel="nofollow" href="#" target="_parent">ADSPL</a> is the Best IoT and AI development agency
+                        in India that provides a team of experts who have high technological skills in building
+                        enterprise-class cloud-based software for the Internet
                         of Things involving Artificial intelligence. </p>
                     <!-- <div class="main-new-button"><a href="company.html">Discover company</a></div> -->
 
@@ -1018,7 +1074,8 @@
                 <div class="col-lg-5">
                     <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
                         <h6>Our Portofolio</h6>
-                        <h2>Discover Our Recent <span class="heading-highlight" style="color: var(--mycolor-3);">Projects</span> And Showcases
+                        <h2>Discover Our Recent <span class="heading-highlight"
+                                style="color: var(--mycolor-3);">Projects</span> And Showcases
                         </h2>
                     </div>
                 </div>
@@ -1044,7 +1101,8 @@
                             </div>
                             <div class="portfolio-item">
                                 <div class="thumb">
-                                    <img src="assets/images/OCPP-Enabled-Electric-Vehicle-Charging-System1.jpg" class="portimg" alt="">
+                                    <img src="assets/images/OCPP-Enabled-Electric-Vehicle-Charging-System1.jpg"
+                                        class="portimg" alt="">
                                     <div class="hover-content">
                                         <div class="inner-content">
                                             <a href="portfolio.html#OCPP-Enabled-Electric-Vehicle">
@@ -1073,7 +1131,8 @@
                             </div>
                             <div class="portfolio-item">
                                 <div class="thumb">
-                                    <img src="assets/images/Liquid-Level-Control-And-Monitoring-Systems2.jpg" class="portimg" alt="">
+                                    <img src="assets/images/Liquid-Level-Control-And-Monitoring-Systems2.jpg"
+                                        class="portimg" alt="">
                                     <div class="hover-content">
                                         <div class="inner-content">
                                             <a href="portfolio.html#Liquid-Level-Control-And-Monitoring">
@@ -1134,7 +1193,8 @@
                                     <div class="hover-content">
                                         <div class="inner-content">
                                             <a href="portfolio.html#Lora-Zigbee-Based-Smart-Nodes">
-                                                <h4>Lora/Zigbee Based Smart Nodes With Current Monitoring, Remote Switching, Air Quality Monitoring
+                                                <h4>Lora/Zigbee Based Smart Nodes With Current Monitoring, Remote
+                                                    Switching, Air Quality Monitoring
                                                 </h4>
                                             </a>
                                             <span>IoT</span>
@@ -1159,11 +1219,13 @@
                             </div>
                             <div class="portfolio-item">
                                 <div class="thumb">
-                                    <img src="assets/images/Hardware-And-Firmware-Of-DSA-For-An-RDSO-Approved-Intelligent-Power-Supply-System2.jpg" class="portimg" alt="">
+                                    <img src="assets/images/Hardware-And-Firmware-Of-DSA-For-An-RDSO-Approved-Intelligent-Power-Supply-System2.jpg"
+                                        class="portimg" alt="">
                                     <div class="hover-content">
                                         <div class="inner-content">
                                             <a href="portfolio.html#Hardware-And-Firmware-Of-DSA">
-                                                <h4>Hardware And Firmware Of DSA For An RDSO Approved Intelligent Power Supply System</h4>
+                                                <h4>Hardware And Firmware Of DSA For An RDSO Approved Intelligent Power
+                                                    Supply System</h4>
                                             </a>
                                             <span>IoT</span>
                                         </div>
@@ -1185,15 +1247,23 @@
                 <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="section-heading">
                         <h6>WE ARE THE TOP DATA SCIENCE Company</h6>
-                        <h1> <b><span class="heading-highlight" style="color: var(--mycolor-3);">AI & IOT COMPANY</span></b>
+                        <h1> <b><span class="heading-highlight" style="color: var(--mycolor-3);">AI & IOT
+                                    COMPANY</span></b>
                         </h1>
                     </div>
-                    <p>ADSPL Tech intends to be the Top Data Science, IOT and AI company in India with strong belief that combination of new emerging technologies like data science, IOT and AI will help create smart and intelligent devices, functions, software’s,
-                        and machines that can simulate smart behavior and assist in decision making with minimum or no human interference.
+                    <p>ADSPL Tech intends to be the Top Data Science, IOT and AI company in India with strong belief
+                        that combination of new emerging technologies like data science, IOT and AI will help create
+                        smart and intelligent devices, functions, software’s,
+                        and machines that can simulate smart behavior and assist in decision making with minimum or no
+                        human interference.
 
 
-                        <br> The convergence of Artificial Intelligence and Data Science is redefining the way industries, business, and economy’s function. While IOT enables connection to multiple sensor which helps to monitor, control, and secure the
-                        data, Data Science tends to deal with data secured from device interaction using the internet, which help the businessalleviates the risk of cost overheads and better utilization of resources to maximize ROI with the help of data
+                        <br> The convergence of Artificial Intelligence and Data Science is redefining the way
+                        industries, business, and economy’s function. While IOT enables connection to multiple sensor
+                        which helps to monitor, control, and secure the
+                        data, Data Science tends to deal with data secured from device interaction using the internet,
+                        which help the businessalleviates the risk of cost overheads and better utilization of resources
+                        to maximize ROI with the help of data
                         analytics and BI.
                     </p>
 
@@ -1214,22 +1284,25 @@
     <div class="p-5 bg-light" id="social-embeded">
         <div class="row d-flex justify-content-center">
             <div class="section-heading">
-                <h2 class="text-center">Our Latest<span class="heading-highlight" style="color: var(--mycolor-3);">Social</span> Feed
+                <h2 class="text-center">Our Latest<span class="heading-highlight"
+                        style="color: var(--mycolor-3);">Social</span> Feed
                 </h2>
             </div>
 
             <div class="col-md-7 p-4">
                 <h3 class="text-center pb-3">Twitter</h3>
                 <div class="embed-twitter">
-                    <a class="twitter-timeline" href="https://twitter.com/AdsplTech?ref_src=twsrc%5Etfw">Tweets by AdsplTech</a>
+                    <a class="twitter-timeline" href="https://twitter.com/AdsplTech?ref_src=twsrc%5Etfw">Tweets by
+                        AdsplTech</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
             <!-- <script crossorigin="anonymous" src="https://connect.facebook.net/te_IN/sdk.js#xfbml=1&version=v11.0" nonce="MEdNi1iV"></script> -->
             <div class="col-md-5 p-4">
                 <h3 class="text-center pb-3">Facebook</h2>
-                    <div class="fb-page" data-href="https://www.facebook.com/adspltechno" data-tabs="timeline" data-width="640" data-height="500"
-                        data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <div class="fb-page" data-href="https://www.facebook.com/adspltechno" data-tabs="timeline"
+                        data-width="640" data-height="500" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
                         <blockquote cite="https://www.facebook.com/adspltechno" class="fb-xfbml-parse-ignore"><a
                                 href="https://www.facebook.com/adspltechno">Adspl Tech</a></blockquote>
                     </div>
@@ -1247,41 +1320,48 @@
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="section-heading">
                                     <h6>Contact Us</h6>
-                                    <h2>Fill Out The Form Below To <span class="heading-highlight" style="color: var(--mycolor-3);">Get In
-                      Touch</span> With Us</h2>
+                                    <h2>Fill Out The Form Below To <span class="heading-highlight"
+                                            style="color: var(--mycolor-3);">Get In
+                                            Touch</span> With Us</h2>
                                 </div>
                             </div>
                             <div class="col-lg-9">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <fieldset>
-                                            <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                                            <input type="name" name="name" id="name" placeholder="Name"
+                                                autocomplete="on" required>
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-6">
                                         <fieldset>
-                                            <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                                            <input type="surname" name="surname" id="surname" placeholder="Surname"
+                                                autocomplete="on" required>
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-6">
                                         <fieldset>
-                                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                                placeholder="Your Email" required="">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-6">
                                         <fieldset>
-                                            <input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on">
+                                            <input type="subject" name="subject" id="subject" placeholder="Subject"
+                                                autocomplete="on">
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                            <textarea name="message" type="text" class="form-control" id="message"
+                                                placeholder="Message" required=""></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
                                             <!-- <button type="submit" id="form-submit" class="main-new-button ">Send Message Now</button> -->
-                                            <input type="button" id="custom-button" value="Send Message Now" onclick="sendEmail()" />
+                                            <input type="button" id="custom-button" value="Send Message Now"
+                                                onclick="sendEmail()" />
 
                                         </fieldset>
                                     </div>
@@ -1310,10 +1390,10 @@
                                                 <img src="assets/images/contact_icon_03.png" alt="location">
                                             </div>
                                             <a href="#">
-                        Shriman Narayan Complex <br>
-                        Baradari Chauraha, Morar <br>
-                        Gwalior, M.P 474006
-                      </a>
+                                                Shriman Narayan Complex <br>
+                                                Baradari Chauraha, Morar <br>
+                                                Gwalior, M.P 474006
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1350,46 +1430,74 @@
                 <div class="close"></div>
                 <div class="branding">
                     <div class="avatar is-online">
-                        <img src="https://image.freepik.com/vecteurs-libre/icone-robot-conception-signe-bot-notion-symbole-chatbot-service-assistance-vocale-bot-support-ligne-bot-stock-illustration-vectorielle_100456-34.jpg" alt="">
+                        <img src="https://image.freepik.com/vecteurs-libre/icone-robot-conception-signe-bot-notion-symbole-chatbot-service-assistance-vocale-bot-support-ligne-bot-stock-illustration-vectorielle_100456-34.jpg"
+                            alt="">
                     </div>
                     <div class="content">
                         <p class="title">SaraBot</p>
-                        <p class="subtitle">Ask me anything</p>
+                        <p class="subtitle">Step towards Technology!</p>
                     </div>
-                    <!--<ul id="dropdown1" class="dropdown-content">
-                        <li><a href="#" id="clear">Clear</a></li>
-                        <li><a href="#" id="restart">Restart</a></li>
-                        <li><a href="#" id="close">Close</a></li>
-                    </ul>-->
                 </div>
             </div>
             <div class="chat-app_content">
-
-                <!--Chatbot contents goes here -->
                 <div class="messages" id="messages">
                     <div class="clearfix"></div>
                 </div>
-
-                <!--<div class="messages">
-                    <div class="message">
-                        <p class="text">Message user</p>
-                    </div>
-                    <div class="message reply">
-                        <p class="text">Message from bot</p>
-                    </div>
-                </div>-->
             </div>
             <div class="chat-app_footer">
-                <input id="chat-input" class="chat-input" type="text" placeholder="Type..." />
+                <!-- <input id="chat-input" class="chat-input" type="text" placeholder="Type..." /> -->
+                <div id="foo" style="text-align: left">
+                    <img id="chat-input-mic-gif" class="" style="display:none;" src="./static/img/mic_loading.gif" alt="mic" width="40" height="40">
+                    <img id="chat-input-mic" class="chat-input-mic"  src="./static/img/mic.png" alt="mic"
+                        width="50" height="50" onclick='runSpeechRecognition()'>
+                    <input id="chat-input" class="chat-input" type="text" placeholder="Type...">
+                </div>
                 <p class="text-left text-md-center text-200">chat&nbsp;by
                     <svg class="Bolt" width="12" height="12" viewBox="0 0 8 14">
-                      <path fill="#FEF79E" fill-rule="evenodd" stroke="#F5A623" stroke-linecap="round" stroke-linejoin="round" stroke-width=".938" d="M4.256 5.777h3.65L.716 15.935l2.721-7.927H.14l6.503-10.08-2.387 7.849z"></path>
+                        <path fill="#FEF79E" fill-rule="evenodd" stroke="#F5A623" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width=".938"
+                            d="M4.256 5.777h3.65L.716 15.935l2.721-7.927H.14l6.503-10.08-2.387 7.849z"></path>
                     </svg>
                     <a class="fw-bold" href="https://www.adspltech.net/" target="_blank">ADSPL</a>
                 </p>
             </div>
         </div>
     </div>
+    <script>
+        function runSpeechRecognition() {
+            var output = document.getElementById("chat-input");
+            var action = document.getElementById("chat-input-mic-gif");
+            var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+            var recognition = new SpeechRecognition();
+            recognition.onstart = function () {
+                //action.innerHTML = "<small>listening, please speak...</small>";
+                //action.classList.add('chat-input-mic');
+                //document.getElementById("chat-input-mic").style.display = "none";
+                document.getElementById('chat-input-mic').style.display = "none";
+                //action.style.verticalAlign = "middle";
+                document.getElementById('chat-input-mic-gif').style.display = "block";
+            };
+            recognition.onspeechend = function () {
+                //action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                document.getElementById('chat-input-mic').style.display = "block";
+                document.getElementById('chat-input-mic-gif').style.display = "none";
+                recognition.stop();
+            }
+            // This runs when the speech recognition service returns result
+            recognition.onresult = function (event) {
+                var transcript = event.results[0][0].transcript;
+                //var confidence = event.results[0][0].confidence;
+                document.getElementById("chat-input").value = transcript;
+                console.log("transcript: ", transcript);
+                //output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence * 100 + "%";
+                //output.classList.remove("hide");
+            };
+
+            // start recognition
+            recognition.start();
+        }
+    </script>
+
     <!-- Script for contact us form -->
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
@@ -1404,18 +1512,18 @@
             var message = form.message.value;
 
             Email.send({
-                    Host: "smtp.gmail.com",
-                    Username: "noreply@adspltech.net",
-                    Password: "Nikhil@adspl1",
-                    To: 'nikhilk@adspltech.net, vikasbhadoria@adspltech.net, admin@adspltech.net, info@adspltech.net',
-                    From: "noreply@adspltech.net",
-                    Subject: "Mail From Contact Us Form",
-                    Body: "Name : " + name + " " + surname + "<br>" +
-                        "Email : " + email + "<br>" +
-                        "Subject : " + subject + "<br>" +
-                        "Message : " + message + "<br>",
-                })
-                .then(function(message) {
+                Host: "smtp.gmail.com",
+                Username: "noreply@adspltech.net",
+                Password: "Nikhil@adspl1",
+                To: 'nikhilk@adspltech.net, vikasbhadoria@adspltech.net, admin@adspltech.net, info@adspltech.net',
+                From: "noreply@adspltech.net",
+                Subject: "Mail From Contact Us Form",
+                Body: "Name : " + name + " " + surname + "<br>" +
+                    "Email : " + email + "<br>" +
+                    "Subject : " + subject + "<br>" +
+                    "Message : " + message + "<br>",
+            })
+                .then(function (message) {
                     alert("Message Sent Successfully")
                 });
         }
@@ -1433,7 +1541,7 @@
                 }
             },
             "showLink": false,
-             "position": "bottom-left"
+            "position": "bottom-left"
             //"theme": "classic",
             //"position": "top",
             //"static": true,
