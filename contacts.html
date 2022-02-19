@@ -349,7 +349,7 @@ contact
 
 
   </main>
-  <div id="map"></div>
+  <div id="googleMap"></div>
   <style>
     #map {
       height: 400px;
@@ -359,21 +359,14 @@ contact
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6-FcJgpiHTDsMLml9awnjT9u6ow-Eo3w&callback=initMap&libraries=&v=weekly"
     async></script>
+
   <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      const uluru = { lat: 26.219628295904993, lng: 78.22214772698511 };
-      // The map, centered at Uluru
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: uluru,
-      });
-      // The marker, positioned at Uluru
-      const marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-      });
+    function googleMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
   </script>
 
