@@ -1430,7 +1430,25 @@
         < 800) delay=8 00; return delay; }, params: { "storage": "session" } }, null ); }), t.insertBefore(e, t.firstChild); })(); </script>-->
     <div id="footer"></div>
     <div id="chat-app" class="chat-app">
-        <div class="chat-app_toggle toggle">
+        <script>
+            window.addEventListener('mouseover', initLandbot, { once: true });
+            window.addEventListener('touchstart', initLandbot, { once: true });
+            var myLandbot;
+            function initLandbot() {
+              if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                  var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://chats.landbot.io/v3/H-1163087-AMS1S5Z2QDHD3DXT/index.json',
+                  });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+              }
+            }
+            </script>
+        <!-- <div class="chat-app_toggle toggle">
             <div class="icon send" id="sendButton">
                 <i class="fas fa-paper-plane"></i>
             </div>
@@ -1456,9 +1474,9 @@
                 <div class="messages" id="messages">
                     <div class="clearfix"></div>
                 </div>
-            </div>
-            <div class="chat-app_footer">
-                <!-- <input id="chat-input" class="chat-input" type="text" placeholder="Type..." /> -->
+            </div> -->
+            <!-- <div class="chat-app_footer">
+                <input id="chat-input" class="chat-input" type="text" placeholder="Type..." />
                 <div id="foo" style="text-align: left">
                     <img id="chat-input-mic-gif" class="" style="display:none;" src="./static/img/mic_loading.gif"
                         alt="IoT company in Madhya Pradesh" width="40" height="40">
@@ -1474,10 +1492,10 @@
                     </svg>
                     <a class="fw-bold" href="https://www.adspltech.net/" target="_blank">ADSPL</a>
                 </p>
-            </div>
+            </div> -->
         </div>
     </div>
-    <script>
+    <!-- <script>
         function runSpeechRecognition() {
             var output = document.getElementById("chat-input");
             var action = document.getElementById("chat-input-mic-gif");
@@ -1510,7 +1528,7 @@
             // start recognition
             recognition.start();
         }
-    </script>
+    </script> -->
 
     <!-- Script for contact us form -->
     <script src="https://smtpjs.com/v3/smtp.js">
